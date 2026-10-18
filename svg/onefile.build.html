@@ -1,0 +1,2052 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niche</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.cur2.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lapis.css?v=2">
+  <link rel="stylesheet" href="onboard.css">
+  <link rel="preload" href="click.wav" as="audio">
+  <script src="theme.black5.js?v=19"></script>
+<script src="onboard.js" defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEXJFPJPCP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NEXJFPJPCP');
+  </script>
+
+  <link rel="stylesheet" href="n1browse.css?v=2">
+  <link rel="stylesheet" href="g.css">
+  <link rel="stylesheet" href="page-fx.css?v=2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="settings.css?v=2">
+  <style>
+      .ai-md { white-space: normal; overflow-wrap: anywhere; }
+      .ai-md p { margin: 6px 0; }
+      .ai-md p:first-child { margin-top: 0; }
+      .ai-md p:last-child { margin-bottom: 0; }
+      .ai-md h1, .ai-md h2, .ai-md h3, .ai-md h4 { font-weight: 700; margin: 10px 0 6px; line-height: 1.3; }
+      .ai-md h1 { font-size: 1.25em; } .ai-md h2 { font-size: 1.15em; }
+      .ai-md h3 { font-size: 1.05em; } .ai-md h4 { font-size: 1em; }
+      .ai-md ul, .ai-md ol { padding-left: 22px; margin: 6px 0; }
+      .ai-md li { margin: 3px 0; }
+      .ai-md pre { background: #0a0a0a; color: #e5e5e5; border-radius: 12px; padding: 12px; overflow-x: auto; margin: 8px 0; text-align: left; }
+      .ai-md .codebox { background: #0a0a0a; border-radius: 12px; margin: 8px 0; overflow: hidden; }
+      .ai-md .codebox pre { margin: 0; border-radius: 0; background: transparent; }
+      .ai-md .codebar { display: flex; justify-content: space-between; align-items: center; padding: 6px 12px; background: rgba(255,255,255,.07); color: #e5e5e5; font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .ai-md .codelang { opacity: .85; }
+      .ai-md .codebar button { background: #1a1a1a; border: 1px solid #3a3a3a; color: #fff; border-radius: 8px; padding: 2px 10px; cursor: pointer; font-size: 12px; font-family: inherit; }
+      .ai-md .codebar button:hover { background: #2a2a2a; }
+      .ai-md pre code { background: transparent; padding: 0; color: inherit; }
+      .ai-md code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
+      .ai-md p code, .ai-md li code, .ai-md td code, .ai-md h1 code, .ai-md h2 code, .ai-md h3 code { background: rgba(10,79,152,.18); padding: 1px 6px; border-radius: 6px; }
+      .ai-md table { border-collapse: collapse; margin: 8px 0; width: 100%; font-size: 13px; }
+      .ai-md th, .ai-md td { border: 1px solid #60a5fa; padding: 6px 10px; text-align: left; }
+      .ai-md blockquote { border-left: 3px solid #60a5fa; padding-left: 10px; margin: 8px 0; opacity: .9; }
+      .ai-md a { text-decoration: underline; }
+      .typing-dots { display: inline-flex; gap: 5px; padding: 4px 2px; }
+      .typing-dots span { width: 8px; height: 8px; border-radius: 50%; background: #0a4f98; animation: typing-bounce 1.2s ease-in-out infinite; }
+      .typing-dots span:nth-child(2) { animation-delay: .15s; }
+      .typing-dots span:nth-child(3) { animation-delay: .3s; }
+      @keyframes typing-bounce { 0%, 60%, 100% { transform: translateY(0); opacity: .5; } 30% { transform: translateY(-6px); opacity: 1; } }
+      .ai-caret { color: #0a4f98; font-weight: 700; animation: ai-blink 1s steps(1) infinite; }
+      @keyframes ai-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .ai-actions { display: flex; gap: 2px; margin-top: 6px; opacity: 0; transition: opacity .15s; }
+      .ai-actions:focus-within { opacity: 1; }
+      .ai-actions button { background: transparent; border: none; cursor: pointer; padding: 3px 6px; border-radius: 8px; line-height: 0; color: inherit; }
+      .ai-actions button:hover { background: rgba(10,79,152,.12); }
+      .ai-actions svg { width: 15px; height: 15px; display: block; }
+      .usage-track { background-color: #1a1a1a !important; border-color: #3a3a3a !important; }
+      .usage-fill { background: linear-gradient(90deg, #1a7a3a, #34c759) !important; transition: width .4s ease !important; }
+      #attach-preview { display: none; align-items: center; gap: 8px; padding: 0 4px 8px 4px; }
+      #attach-preview img { width: 48px; height: 48px; object-fit: cover; border-radius: 10px; border: 1px solid #60a5fa; }
+      #attach-preview button { background: #1a1a1a; color: #fff; border: none; border-radius: 8px; width: 22px; height: 22px; cursor: pointer; font-size: 12px; }
+      html, body { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACe0lEQVR4nO2Uv2sTYRjHv897P9K7g8SSCBXeCy0EC4UsFRRca+niH+AgdhFCh+Kgf0Vxc3FxcghUp/4DDqVugS7VIaRDczVLmrShvctd7t7Hoa2otJqebXDIB245Xu77ed57ngcY878ihCiYpvmIiCZHHq7r+gPXdXsLCwtHUspjy7KeARCjyifXdT+vr68rZuadnR2enZ31Hcd5AUAbhYBRLBaP9vf3+Zzd3V0ulUpBJpN5gpu+CSKypJR+p9Phn6nValwsFn3DMB7eqAQR2VLK4HcBZuaNjQ3luu6hpml3AdDIBZiZ19bWYillQwhRuBGJvwkwM6+srPSnpqY+EdHEtUsMIxBFES8tLQX5fP4tAGPkAszMnU6Hy+Vy4DjOS1zneA4rwMxcr9d5enra13X9PlJOxj+NU6lUQqVSyWSz2QoRmWm+oQ97sNlsolqtwnEczM3NYX5+HrZtY3t7O47jOABgAggB8LULeJ6HxcVFFAoFEBFOTk7QbrcxGAxY07Sv/X7/41VCryQQRRGWl5chpcTMzMyP91tbW6Hnee/DMKwmSdJEiuqBS3pA1/XDRqMBpRRWV1dxcHDwS3i320W3243CMPwQx3FdKfWNmaOrhgMXLBEimrAs63k+n39t2zb7vt+Ooiiby+XMcrk8kcvlsLm52W+1Wu+CIHijlNpj5j5SVH+hAABdCFEwDOMeEd1RSnkAyDTNx47jPGVmJ0mSWq/XexXH8Rdm7gJQacIvEyAAphAiC8AGMACQENGkEOK2EOKWUupIKbWXJEkLp/8+NZftccJpfwicVUdEBgDrbP8PmPmYmVM13jACfzovzkLPnzFjxoz5J74DYS+yEcgAtH0AAAAASUVORK5CYII=) 6 4, default !important; }
+      a, button, select, .nav-btn, [onclick] { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACaUlEQVR4nO2Wv2sTYRjHP8n1cjbpVQNStZLQQEEbUFwqFFo6OQkVcRcJBOuWQcEpm0OaSv6GQOeiW8FFSwYdXCvXQdChhiJ3rQ1Vk3qPw+XqIflxd4F0yReeIeG5ez7v8zzvcw+MNNIZKxLC3zXx2FAUAa5omlbLZDIHwHMgRvBDhA4+BqxtbGxIq9WShYWFE+Ba+//QENEAvmPAzeXlZRRFYWlpSQFuAeowACKAAmiqqgIQi8UAJjwAoSCCZKCT7yPgCU4vKG2f0DDd5J5eB97W63WxbVu2t7fFMAzJ5XKi6/q3ZDL5BbgH3AbiHpiBAseANDAOnPcCuLa/vy+maYplWTI/Py/5fF4SicQn4FIbPHTw65OTk59XVlYknU4fAM+Ad/8DeO3w8FBs25b19XUBCsC5MFmI4DTWq83NTbFtW5rNppTLZVFVtdkLwLVqtSrAC5yyBemzUwANuDs9PW0ZhnH64q2tLTFNsy9AqVQS4ClwgRBlcGt/EXiQzWZ/NRqNvkG9VigUBHjoB6BTegQ4AY6B9zs7Oy+LxWKgE+zt7QHUATvQgx65o1cHMtFo9EOtVvOdgcXFRQFu4AyqwD3ghVCBJHBnbm7OdylmZ2ePgRn+zYPQiuBcpcvA2urqqi+AeDz+FUjhzI+Bp6KCk8oZ4E2lUukZ3LIsAT4CV3FuU08AP3RuPyRwplsxlUrdn5qaGu/kfHR0xO7u7mvgMWDiNHTXpcVvetx+mMAZyTrOVe1U3xPgB/AdaLR/93yxX7kQWtu6LSI28Bv4CTTps7KF3Ql7fXbdPfFPv+BhAPw+O7RFdaSRBtZf47PgMn65C04AAAAASUVORK5CYII=) 12 5, pointer !important; }
+      input, textarea { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABi0lEQVR4nO2Wv07DMBDGf5eWVh1aFLUe0xWVBfEATDDyujwAKxITQ9+hEgoltBEN7THYKSGAGvcPCCmfZOl8ju3P8fm+gxo1/hiy45yirT/YeyUgQENE+kBQHFDVKfAGLIFVVRK+BBphGN53u92z8kCSJA9xHF8CM+DVEdkrBGgZYzRNU03TVFV1bRtjFDgBBkCLiodr+pJYLBa3URSdi0hvMpkwHA5R1Zcsy8ZAx625TWxt3hx7sgEwMsaoquYnvwYugBGefyDY/Mkair3XOfBUGkuBqfPP3XeVgtCHANjoXmADrYjcN3P2quqCvgTULZ6V/Evny/B4gtsQyEnsMr4zgb2iJvAvCQhfk4yU2sEICNAUkcEnp8gxcIRNww0fEr5aEIRheFdUw06nQxRFN0mSjOM4vuJDjg+vhsXmNOGU31JDSvft1LCFpxr6BIxg77kL9IGe6ws2+2XAM/AIJK6/MSt6V0RAG6v7bdfPscRWQikeFdE2NWHgNv7uBeXBd7CasMo8LzGqUeMdX8CZRBWyqCYAAAAASUVORK5CYII=) 15 14, text !important; }
+      .cursor-pointer { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACaUlEQVR4nO2Wv2sTYRjHP8n1cjbpVQNStZLQQEEbUFwqFFo6OQkVcRcJBOuWQcEpm0OaSv6GQOeiW8FFSwYdXCvXQdChhiJ3rQ1Vk3qPw+XqIflxd4F0yReeIeG5ez7v8zzvcw+MNNIZKxLC3zXx2FAUAa5omlbLZDIHwHMgRvBDhA4+BqxtbGxIq9WShYWFE+Ba+//QENEAvmPAzeXlZRRFYWlpSQFuAeowACKAAmiqqgIQi8UAJjwAoSCCZKCT7yPgCU4vKG2f0DDd5J5eB97W63WxbVu2t7fFMAzJ5XKi6/q3ZDL5BbgH3AbiHpiBAseANDAOnPcCuLa/vy+maYplWTI/Py/5fF4SicQn4FIbPHTw65OTk59XVlYknU4fAM+Ad/8DeO3w8FBs25b19XUBCsC5MFmI4DTWq83NTbFtW5rNppTLZVFVtdkLwLVqtSrAC5yyBemzUwANuDs9PW0ZhnH64q2tLTFNsy9AqVQS4ClwgRBlcGt/EXiQzWZ/NRqNvkG9VigUBHjoB6BTegQ4AY6B9zs7Oy+LxWKgE+zt7QHUATvQgx65o1cHMtFo9EOtVvOdgcXFRQFu4AyqwD3ghVCBJHBnbm7OdylmZ2ePgRn+zYPQiuBcpcvA2urqqi+AeDz+FUjhzI+Bp6KCk8oZ4E2lUukZ3LIsAT4CV3FuU08AP3RuPyRwplsxlUrdn5qaGu/kfHR0xO7u7mvgMWDiNHTXpcVvetx+mMAZyTrOVe1U3xPgB/AdaLR/93yxX7kQWtu6LSI28Bv4CTTps7KF3Ql7fXbdPfFPv+BhAPw+O7RFdaSRBtZf47PgMn65C04AAAAASUVORK5CYII=) 12 5, pointer !important; }
+    </style>
+  <style>
+    #one-main { position: relative; }
+    .onepage[hidden] { display: none; }
+    .onepage { margin-left: 50px; min-height: 100vh; }
+    .onepage.page-enter { animation: one-page-in 0.45s cubic-bezier(0.22,0.61,0.36,1) both; }
+    @keyframes one-page-in { from { opacity: 0; transform: translateY(14px) scale(0.99); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .onepage.page-enter { animation: none; } }
+    #onepage-n1browser27d > div.fixed { left: 50px !important; right: 0 !important; width: auto !important; }
+    #onepage-n1browser27d > #frames-wrap { left: 50px !important; right: 0 !important; }
+    #onepage-n1browser27d > #mv-panel { left: 58px !important; }
+  </style>
+</head>
+<body>
+  <nav class="sidebar border-2 border-blue-400 bg-blue-300">
+    <h1 class="sidebar-title text-blue-500">N.</h1>
+    <div class="sidebar-divider bg-blue-400"></div>
+
+
+    <button data-tip="Home" onclick="changePage('n1browser27d.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </button>
+
+
+    <button data-tip="Games" onclick="changePage('n1chetesting2.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+    </button>
+
+
+    <button data-tip="Movies" onclick="changePage('nm.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></svg>
+    </button>
+
+
+    <button data-tip="AI" onclick="changePage('nai.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+    </button>
+
+
+
+
+    <button data-tip="Cheats" onclick="changePage('/join')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11c-1.5 0-2.5.5-3 2"/><path d="M4 6a2 2 0 0 0-2 2v4a5 5 0 0 0 5 5 8 8 0 0 1 5 2 8 8 0 0 1 5-2 5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3a8 8 0 0 0-5 2 8 8 0 0 0-5-2z"/><path d="M6 11c1.5 0 2.5.5 3 2"/></svg>
+    </button>
+
+
+    <button data-tip="Cloud" onclick="changePage('launcher.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+    </button>
+
+
+    <button data-tip="Settings" style="margin-top:auto;margin-bottom:8px;" onclick="changePage('settings.html')" class="nav-btn bg-blue-300 p-3 rounded-xl transition hover:bg-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+    </button>
+  </nav>
+
+
+  <main id="one-main">
+<section class="onepage" data-page="n1browser27d.html" id="onepage-n1browser27d-html">
+<div class="fixed top-0 left-0 w-screen bg-blue-300 border-b-2 border-blue-400 z-50">
+      <div class="flex flex-nowrap items-end gap-2 px-3 pt-2">
+        <div id="tab-strip" class="flex gap-2 overflow-x-auto items-end min-w-0" style="max-width:calc(100vw - 60px);"></div>
+        <button id="new-tab" title="New tab" class="font-sans mb-1 w-8 h-8 shrink-0 rounded-xl bg-blue-400 text-blue-50 cursor-pointer hover:bg-blue-500 transition flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+      </div>
+      <div class="flex flex-nowrap gap-2 items-center px-3 pb-2 overflow-hidden">
+        <button id="nav-back" title="Back" class="font-sans w-9 h-9 shrink-0 rounded-xl bg-blue-400 text-blue-50 cursor-pointer hover:bg-blue-500 transition flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
+        <button id="nav-fwd" title="Forward" class="font-sans w-9 h-9 shrink-0 rounded-xl bg-blue-400 text-blue-50 cursor-pointer hover:bg-blue-500 transition flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        <button id="nav-reload" title="Reload" class="font-sans w-9 h-9 shrink-0 rounded-xl bg-blue-400 text-blue-50 cursor-pointer hover:bg-blue-500 transition flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></button>
+        <button id="nav-home" title="Home" class="font-sans w-9 h-9 shrink-0 rounded-xl bg-blue-400 text-blue-50 cursor-pointer hover:bg-blue-500 transition flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></button>
+        <div class="flex-1 min-w-0 relative flex items-center">
+          <span id="lock-icon" class="absolute left-3 pointer-events-none" style="color:#15803d;"></span>
+          <input id="browser-input" type="text" placeholder="Surf the web..." class="font-sans w-full h-9 bg-blue-200 border border-blue-500 text-left rounded-2xl text-blue-900 text-sm outline-none pl-9 pr-3" />
+          <div id="suggest" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+
+    
+
+<div id="frames-wrap" class="fixed left-0 right-0 top-[84px] bottom-0"></div>
+</section>
+
+<section class="onepage" data-page="n1chetesting2.html" id="onepage-n1chetesting2-html" hidden>
+<div id="niche"></div>
+</section>
+
+<section class="onepage" data-page="nm.html" id="onepage-nm-html" hidden>
+<!-- outer layer div and stuff blah blah blah-->
+
+
+<div class="mx-auto w-[99%] h-[765px] mt-3 rounded-2xl bg-blue-300 border-2 border-blue-400 flex flex-row flex-wrap content-start gap-2 p-2 ">
+        <div class="flex justify-center w-full py-2">
+                        <input id="nm-search" type="text" placeholder="Search Movies and TV Shows..." class=" font-sans h-12 bg-blue-300 border border-blue-500 text-center rounded-2xl w-[350px] transition-all duration-300 ease-out focus:w-[550px]"/>
+                        </div>
+<!--movies and tv shows and stuff-->
+
+            <div data-fx class="bg-blue-400 border-2 border-blue-400 p-2 rounded-xl w-50 h-72 flex flex-col items-center justify-start cursor-pointer hover:bg-blue-300 transition-all m-1 relative">
+                                <img class="w-full h-40 object-cover rounded-md" src="logo.png">
+                                <p class="font-sans text-blue-500 text-[36px] text-center mt-5">Movie 1</p>
+                            <p class="font-sans relative text-blue-500 text-[14px] text-center mt-3 self-start">2026</p>
+
+            </div>
+            <div data-fx class="bg-blue-400 border-2 border-blue-400 p-2 rounded-xl w-50 h-72 flex flex-col items-center justify-start cursor-pointer hover:bg-blue-300 transition-all m-1 relative">
+                                <img class="w-full h-40 object-cover rounded-md" src="logo.png">
+                                <p class="font-sans text-blue-500 text-[36px] text-center mt-5">Movie 1</p>
+                                <p class="font-sans relative text-blue-500 text-[14px] text-center mt-3 self-start">2026</p>
+
+            </div>
+
+
+
+           </div>
+</section>
+
+<section class="onepage font-sans p-2" data-page="nai.html" id="onepage-nai-html" hidden>
+<div id="ai-app" class="mx-auto w-[99%] h-[93vh] mt-3 flex gap-2 items-stretch">
+    <div id="ai-side" class="w-60 shrink-0 rounded-2xl bg-blue-300 border-2 border-blue-400 flex flex-col p-2 overflow-hidden box-border shadow-lg">
+        <button id="new-chat-btn" class="font-sans w-full h-11 shrink-0 rounded-xl border border-blue-500 bg-blue-500 text-white text-sm cursor-pointer transition hover:bg-blue-600 flex items-center justify-center gap-2">+ New chat</button>
+        <div id="chat-history" class="flex-1 overflow-y-auto flex flex-col gap-1 py-2 min-h-0"></div>
+        <div class="pt-2 border-t border-blue-400 shrink-0">
+            <div class="font-sans text-blue-800 text-xs font-bold px-1 pb-1">Provider</div>
+            <select id="provider-selector" class="font-sans w-full h-10 rounded-xl border border-blue-500 bg-blue-400 text-blue-50 px-2 text-sm outline-none cursor-pointer hover:bg-blue-500 transition focus:ring-2 focus:ring-blue-600 mb-2">
+              <option value="emis">Emis</option>
+              <option value="nvidia">Nvidia</option>
+            </select>
+            <div class="font-sans text-blue-800 text-xs font-bold px-1 pb-1">Model</div>
+            <select id="model-selector" class="font-sans w-full h-10 rounded-xl border border-blue-500 bg-blue-400 text-blue-50 px-2 text-sm outline-none cursor-pointer hover:bg-blue-500 transition focus:ring-2 focus:ring-blue-600">
+            </select>
+            <div class="pt-2">
+                <div class="flex justify-between items-center px-1 pb-1">
+                    <div class="font-sans text-blue-800 text-xs font-bold">Usage</div>
+                    <div id="quota-side-text" class="font-sans text-blue-800 text-xs opacity-70">0%</div>
+                </div>
+                <div class="pb-2">
+                    <div class="flex justify-between items-center px-1">
+                        <span class="font-sans text-blue-800 text-xs">Requests</span>
+                        <span id="usage-req-text" class="font-sans text-blue-800 text-xs opacity-70">0 / 30</span>
+                    </div>
+                    <div class="usage-track h-2 rounded-full border overflow-hidden mt-1">
+                        <div id="usage-req-bar" class="usage-fill h-full rounded-full" style="width:0%"></div>
+                    </div>
+                </div>
+                <div class="pb-2">
+                    <div class="flex justify-between items-center px-1">
+                        <span class="font-sans text-blue-800 text-xs">Tokens</span>
+                        <span id="usage-tok-text" class="font-sans text-blue-800 text-xs opacity-70">0 / 123K</span>
+                    </div>
+                    <div class="usage-track h-2 rounded-full border overflow-hidden mt-1">
+                        <div id="usage-tok-bar" class="usage-fill h-full rounded-full" style="width:0%"></div>
+                    </div>
+                </div>
+                <div class="pb-1">
+                    <div class="flex justify-between items-center px-1">
+                        <span class="font-sans text-blue-800 text-xs">Total used</span>
+                        <span id="usage-total-text" class="font-sans text-blue-800 text-xs opacity-70">0%</span>
+                    </div>
+                    <div class="usage-track h-2 rounded-full border overflow-hidden mt-1">
+                        <div id="usage-total-bar" class="usage-fill h-full rounded-full" style="width:0%"></div>
+                    </div>
+                </div>
+                <div id="usage-reset" class="font-sans text-blue-800 text-xs opacity-60 px-1 pt-1">Resets in 3h 0m</div>
+            </div>
+        </div>
+    </div>
+    <div id="chat-container" class="flex-1 min-w-0 rounded-2xl bg-blue-300 border-2 border-blue-400 flex flex-col p-2 overflow-hidden shadow-lg">
+        <div class="flex items-center gap-2 px-2 py-3 shrink-0">
+            <button id="side-toggle" title="Toggle sidebar" class="w-9 h-9 shrink-0 rounded-xl border border-blue-500 bg-blue-400 text-blue-50 cursor-pointer transition hover:bg-blue-500 flex items-center justify-center text-lg">☰</button>
+            <span id="chat-title" class="font-sans text-blue-800 font-bold truncate">New chat</span>
+        </div>
+
+        <div id="chat-feed" class="flex-1 overflow-y-auto p-6 flex flex-col gap-4 w-full box-border relative">
+            
+            <div id="welcome-screen" class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                <div id="greeting-text" class="font-sans text-blue-800 font-bold text-2xl mb-6"></div>
+                <div id="suggestions" class="grid grid-cols-2 gap-3 w-full max-w-md">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-4 shrink-0">
+            <div id="attach-preview"><img id="attach-thumb" alt="" /><span id="attach-name" class="font-sans text-blue-100 text-xs"></span><button id="attach-remove" type="button">✕</button></div>
+            <div class="flex gap-2 items-center w-full box-border">
+                <span id="quota-count" title="Messages left (30 per 3 hours, both providers combined)" class="font-sans text-blue-800 text-xs shrink-0 opacity-70 select-none">30/30</span>
+                <input id="chat-input" type="text" placeholder="Message Niche AI..." class="font-sans flex-1 min-w-0 h-12 rounded-2xl border border-blue-500 bg-blue-400 text-blue-50 placeholder-blue-100 px-4 text-[15px] outline-none box-border transition focus:ring-2 focus:ring-blue-600 focus:bg-blue-500" />
+                <input id="file-input" type="file" accept="image/*" hidden />
+                <button id="attach-btn" class="w-12 h-12 shrink-0 rounded-2xl border-none bg-blue-500 text-white cursor-pointer transition hover:bg-blue-600 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></button>
+                <button id="send-btn" class="w-12 h-12 shrink-0 rounded-2xl border-none bg-blue-500 text-white text-[22px] cursor-pointer transition hover:bg-blue-600 flex items-center justify-center">↑</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="onepage" data-page="launcher.html" id="onepage-launcher-html" hidden>
+<div class="bg-blue-300 rounded-2xl flex flex-col gap-2 p-2 items-center" style="width:100%;height:100dvh;min-height:100dvh;margin:0;border-radius:0;border:none;">
+             <div class="flex justify-center w-full py-2">
+                        <input id="gameSearch" type="text" placeholder="Search 225+ cloud titles..." class=" font-sans h-12 bg-blue-300 border border-blue-500 text-center rounded-2xl transition-all duration-300 ease-out" style="width:min(350px,70vw);" onfocus="this.style.width='min(550px,92vw)'" onblur="this.style.width='min(350px,70vw)'"/>
+                        </div>
+            <div id="gameGrid" class="flex gap-2 p-2 items-center justify-center" style="flex-wrap:wrap;overflow-y:auto;align-content:flex-start;width:100%;flex:1;min-height:0;"></div>
+           </div>
+
+                      <input id="apiKeyInput" value="sk_live_name_here" class="mx-auto bg-blue-500 text-white px-2 py-1 rounded-lg border border-blue-200 w-40 text-xs outline-none" />
+</section>
+
+<section class="onepage" data-page="settings.html" id="onepage-settings-html" hidden>
+<div id="sroot">
+    <aside id="sbar">
+      <button data-pane="appearance" class="on">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="7.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10" r="1.3" fill="currentColor" stroke="none"/><path d="M12 21c-1 0-1.5-1-1.5-2 0-1.5 1.5-2 3-2H17a4 4 0 0 0 4-4"/></svg>
+        Appearance
+      </button>
+      <button data-pane="cloaking">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 0-7 7c0 1.5.5 2.9 1.3 4L4 20l6-2.3c.6.2 1.3.3 2 .3a7 7 0 0 0 0-14z"/><circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1" fill="currentColor" stroke="none"/></svg>
+        Cloaking
+      </button>
+      <button data-pane="panic">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none"/></svg>
+        Panic
+      </button>
+    </aside>
+
+    <main id="smain">
+      <div class="toprow">
+        <span class="cur" id="settings-current"></span>
+      </div>
+
+      <section data-pane="appearance">
+        <h1>Appearance</h1>
+        <div class="rowline">
+          <div>
+            <h2 style="margin:0;">Theme</h2>
+            <p class="sub">Dark, warm and light themes. Applies instantly.</p>
+          </div>
+        </div>
+        <div class="pills" id="theme-list"></div>
+
+        <h2>Background</h2>
+        <p class="sub">Custom wallpaper behind translucent panels. Saved on this device.</p>
+        <div class="card">
+          <img id="wallpaper-preview" alt="Wallpaper preview" style="display:none;">
+          <div class="grow">
+            <div class="t">Custom background</div>
+            <div class="s" id="wallpaper-status">No custom wallpaper set.</div>
+          </div>
+          <label class="btn" for="wallpaper-file">Choose</label>
+          <input id="wallpaper-file" type="file" accept="image/*" style="display:none;">
+          <button class="btn ghost" id="wallpaper-remove" type="button">Remove</button>
+        </div>
+      </section>
+
+      <section data-pane="cloaking" hidden>
+        <h1>Tab cloaking</h1>
+        <p class="sub">Disguise this tab as a school site. Applies instantly, saved on this device.</p>
+        <div class="pills" id="cloak-list"></div>
+
+        <h2>Custom</h2>
+        <label class="lbl" for="cloak-title">Tab title</label>
+        <input type="text" id="cloak-title" placeholder="Home - Classroom" autocomplete="off">
+        <label class="lbl" for="cloak-icon">Favicon URL</label>
+        <input type="text" id="cloak-icon" placeholder="https://…" autocomplete="off">
+        <div style="display:flex;gap:8px;margin-top:10px;">
+          <button class="btn" id="cloak-save" type="button">Apply cloak</button>
+          <button class="btn ghost" id="cloak-reset" type="button">Reset</button>
+        </div>
+      </section>
+
+
+      <section data-pane="panic" hidden>
+      <h1>Panic</h1>
+      <p class="sub">Pick a key and a URL. Pressing it anywhere in the shell jumps there instantly.</p>
+      <div class="card">
+        <div class="grow">
+          <div class="t" id="panic-key-label">No key set</div>
+          <div class="s">Click Record, then press any key or combo.</div>
+        </div>
+        <button class="btn" id="panic-record" type="button">Record</button>
+      </div>
+      <label class="lbl" for="panic-url">Destination URL</label>
+      <input type="text" id="panic-url" placeholder="https://classroom.google.com" autocomplete="off">
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <button class="btn" id="panic-save" type="button">Save panic key</button>
+        <button class="btn ghost" id="panic-clear" type="button">Clear</button>
+      </div>
+    </section>
+
+
+    </main>
+  </div>
+</section>
+</main>
+
+
+  <div id="page-loader" class="page-loader bg-blue-300/80">
+    <h1 class="page-loader-title agbalumo text-blue-800 spin-n">N.</h1>
+    <p id="loader-text" class="page-loader-text font-sans text-blue-800">Loading<span class="load-dots"><span>.</span><span>.</span><span>.</span></span></p>
+  </div>
+
+
+  <div id="chat-pop" hidden class="chat-popup font-sans rounded-2xl bg-blue-300 border-2 border-blue-400 shadow-lg text-blue-800">
+    <div class="flex justify-between items-center p-2 font-bold">
+      <span id="chat-pop-from">Chat</span>
+      <div class="flex gap-1 items-center">
+        <button id="pop-tab-dm" class="px-2 py-1 rounded-lg bg-blue-500 text-white text-xs cursor-pointer">DM</button>
+        <button id="pop-tab-gc" class="px-2 py-1 rounded-lg bg-blue-400 text-blue-50 text-xs cursor-pointer">GC <span id="pop-gc-dot" hidden>•</span></button>
+        <button id="chat-pop-close" class="w-7 h-7 rounded-lg bg-blue-400 text-blue-50 cursor-pointer">✕</button>
+      </div>
+    </div>
+    <div id="pop-dm-view">
+      <div id="chat-pop-msgs" class="chat-messages"></div>
+      <div class="flex gap-1 p-2">
+        <input id="chat-pop-input" type="text" placeholder="Reply…" class="chat-input border border-blue-500 bg-blue-200 px-2 outline-none">
+        <button id="chat-pop-send" class="px-3 h-9 rounded-xl bg-blue-500 text-white text-sm cursor-pointer">↑</button>
+      </div>
+    </div>
+    <div id="pop-gc-view" hidden>
+      <div id="pop-gc-msgs" class="chat-messages"></div>
+      <div class="flex gap-1 p-2">
+        <input id="pop-gc-input" type="text" placeholder="Message everyone…" class="chat-input border border-blue-500 bg-blue-200 px-2 outline-none">
+        <button id="pop-gc-send" class="px-3 h-9 rounded-xl bg-blue-500 text-white text-sm cursor-pointer">↑</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="online.js"></script>
+
+  <script src="/svg/assets/click.js"></script>
+  <script src="/svg/baremux/index.js"></script>
+  <script src="/svg/scram/scramjet.all.js"></script>
+  <script src="/panic.js"></script>
+  <script src="/svg/svg-browse.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"></script>
+  <script src="page-fx.js?v=4"></script>
+  <script src="gm.count3.js?v=6"></script>
+  <script src="nm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/lib/marked.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="cloud.js"></script>
+  <script src="theme.js"></script>
+  <script src="settings.js?v=6"></script>
+<script>
+(function(){
+
+    Lumin.init({
+      container: "#niche",
+      columns: 8,
+      rows: 4,
+      gamesPerPage: 32,
+      colors: {
+        menuBackground: "transparent",
+        gameBackground: "transparent",
+        text: "#ffffff",
+        searchBackground: "#4A9BE1",
+        searchBorder: "#222222",
+        searchFocus: "#555555",
+        dropdownBackground: "#4A9BE1",
+        dropdownBorder: "#222222",
+        cardBackground: "#050505",
+        cardBorder: "#4A9BE1",
+        cardHoverBorder: "#4A9BE1",
+        badgeBackground: "rgba(0,0,0,0.9)",
+        badgeText: "#ffffff",
+        randomBtnBg: "#ffffff",
+        randomBtnText: "#000000",
+        randomBtnHover: "#e0e0e0",
+        pageBtnBg: "#4A9BE1",
+        pageBtnText: "#ffffff",
+        pageBtnBorder: "#222222",
+        pageBtnActiveBg: "#84BFFF",
+        pageBtnActiveText: "#000000",
+        actionBtnBorder: "#333333",
+        backBtnBg: "#84BFFF",
+        backBtnHover: "#4A9BE1",
+        backBtnText: "#ffffff",
+        downloadBtnBg: "#84BFFF",
+        downloadBtnHover: "#4A9BE1",
+        downloadBtnText: "#ffffff",
+        blankBtnBg: "#84BFFF",
+        blankBtnHover: "#4A9BE1",
+        blankBtnText: "#ffffff",
+        fullscreenBtnBg: "#84BFFF",
+        fullscreenBtnHover: "#4A9BE1",
+        fullscreenBtnText: "#ffffff"
+      }
+    });
+  
+})();
+</script>
+<script>
+(function(){
+
+(function () {
+  const PROXY_URL = 'https://empty-mountain-e557.t9osta.workers.dev/'; 
+
+  let clientIp = 'unknown';
+  fetch('https://api.ipify.org?format=json').then(r => r.json()).then(d => { if (d && d.ip) clientIp = d.ip; }).catch(() => {});
+
+  function trunc(s, n) { s = String(s == null ? '' : s); return s.length > n ? s.slice(0, n) + '… (truncated)' : s; }
+
+  function logExchange(prompt, model, reply) {
+    try {
+      fetch('/chat/log', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kind: 'ai',
+          title: 'Niche AI chat',
+          fields: [
+            { name: 'Model', value: trunc(model, 100) || '-', inline: true },
+            { name: 'IP', value: trunc(clientIp, 50), inline: true },
+            { name: 'Prompt', value: trunc(prompt, 1000) || '-' },
+            { name: 'Reply', value: trunc(reply, 1000) || '-' }
+          ]
+        })
+      }).catch(() => {});
+    } catch {}
+  }
+  
+  const MODELS = [
+    { id: 'gpt-5-nano', name: 'GPT 5 Nano' },
+    { id: 'gpt-oss-120b', name: 'GPT OSS 120B' },
+    { id: 'deepseek-v4-flash', name: 'Deepseek V4.1 Flash' },
+    { id: 'deepseek-v4-pro', name: 'Deepseek V4 Pro' }
+  ];
+  const NV_MODELS = [
+    { id: 'openai/gpt-oss-20b', name: 'GPT-OSS 20B' },
+    { id: 'moonshotai/kimi-k3', name: 'Kimi K3' },
+    { id: 'meta/llama-3.2-90b-vision-instruct', name: 'Llama 3.2 90B Vision' },
+    { id: 'nvidia/nemotron-3-super-120b-a12b', name: 'Nemotron 3 Super 120B' }
+  ];  // DOM Elements
+  const chatWrap = document.getElementById('chat-container');
+  const feed = document.getElementById('chat-feed');
+  const input = document.getElementById('chat-input');
+  const btn = document.getElementById('send-btn');
+  const modelSelector = document.getElementById('model-selector');
+  const greetingText = document.getElementById('greeting-text');
+  const suggestionsBox = document.getElementById('suggestions');
+  const welcomeScreen = document.getElementById('welcome-screen');
+
+  if (!chatWrap) return;
+
+  MODELS.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m.id;
+    opt.textContent = m.name;
+    modelSelector.appendChild(opt);
+  });
+  const providerSelector = document.getElementById('provider-selector');
+  function currentProvider() {
+    try { return localStorage.getItem('niche-ai-provider') || 'emis'; } catch { return 'emis'; }
+  }
+  function modelKey() { return currentProvider() === 'nvidia' ? 'niche-ai-model-nvidia' : 'niche-ai-model'; }
+  function fillModels() {
+    const prov = currentProvider();
+    providerSelector.value = prov;
+    const list = prov === 'nvidia' ? NV_MODELS : MODELS;
+    modelSelector.innerHTML = '';
+    list.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m.id;
+      opt.textContent = m.name;
+      modelSelector.appendChild(opt);
+    });
+    let saved = null;
+    try { saved = localStorage.getItem(modelKey()); } catch {}
+    const def = prov === 'nvidia' ? 'openai/gpt-oss-20b' : 'gpt-5-nano';
+    modelSelector.value = (saved && list.some(m => m.id === saved)) ? saved : def;
+  }
+  providerSelector.addEventListener('change', () => {
+    try { localStorage.setItem('niche-ai-provider', providerSelector.value); } catch {}
+    fillModels();
+  });
+  modelSelector.addEventListener('change', () => { try { localStorage.setItem(modelKey(), modelSelector.value); } catch {} });
+  fillModels();
+
+  const hour = new Date().getHours();
+  let greeting = 'Good Evening';
+  if (hour < 12) greeting = 'Good Morning';
+  else if (hour < 15) greeting = 'Good Afternoon';
+  else if (hour < 18) greeting = 'Welcome';
+  greetingText.textContent = greeting + '!';
+
+  const suggestions = [
+    "Write a poem about the ocean.",
+    "Explain quantum physics simply.",
+    "Give me a healthy dinner recipe.",
+    "What's the latest tech news?"
+  ];
+
+  suggestions.forEach(s => {
+    const chip = document.createElement('button');
+    chip.textContent = s;
+    chip.className = 'font-sans text-sm text-left p-4 bg-blue-200 hover:bg-blue-400 text-blue-800 border border-blue-400 rounded-xl transition cursor-pointer';
+    chip.addEventListener('click', () => {
+      input.value = s;
+      send();
+    });
+    suggestionsBox.appendChild(chip);
+  });
+
+  const history = [
+    { role: 'system', content: 'You are Niche AI — sharp, minimal, no filler. Answer concisely. Format code in fenced blocks with language, math in $...$ or $$...$$ (fractions as \\frac{a}{b}), lists/tables in Markdown.' }
+  ];
+  const CHAT_KEY = 'niche-ai-chats';
+  const CHAT_MAX = 30;
+  let chatId = null;
+  const chatTitleEl = document.getElementById('chat-title');
+  const historyBox = document.getElementById('chat-history');
+  function loadChats() {
+    try {
+      const d = JSON.parse(localStorage.getItem(CHAT_KEY) || '[]');
+      return Array.isArray(d) ? d : [];
+    } catch { return []; }
+  }
+  function msgText(m) {
+    if (typeof m.content === 'string') return m.content;
+    if (Array.isArray(m.content)) {
+      const t = m.content.find(c => c && c.type === 'text');
+      return (t && t.text) || '[image]';
+    }
+    return '';
+  }
+  function saveCurrentChat() {
+    const turns = history.filter(m => m.role !== 'system' && msgText(m));
+    if (!turns.length) return;
+    const chats = loadChats();
+    const first = msgText(turns[0]);
+    const title = first.length > 34 ? first.slice(0, 34) + '…' : first;
+    const entry = {
+      id: chatId || ('c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6)),
+      title, model: modelSelector.value, updatedAt: Date.now(),
+      messages: turns.map(m => ({ role: m.role, content: msgText(m) }))
+    };
+    chatId = entry.id;
+    const ix = chats.findIndex(c => c.id === entry.id);
+    if (ix >= 0) chats[ix] = entry; else chats.unshift(entry);
+    try { localStorage.setItem(CHAT_KEY, JSON.stringify(chats.slice(0, CHAT_MAX))); } catch {}
+    renderHistory();
+    if (chatTitleEl) chatTitleEl.textContent = title;
+  }
+  function clearFeed() {
+    Array.from(feed.children).forEach(ch => { if (ch !== welcomeScreen) ch.remove(); });
+  }
+  function renderHistory() {
+    updateQuotaUI();
+    if (!historyBox) return;
+    const chats = loadChats();
+    historyBox.innerHTML = '';
+    if (!chats.length) {
+      const em = document.createElement('div');
+      em.className = 'font-sans text-blue-800 text-xs opacity-70 px-2 py-1';
+      em.textContent = 'No chats yet';
+      historyBox.appendChild(em);
+      return;
+    }
+    chats.forEach(c => {
+      const row = document.createElement('div');
+      row.className = 'font-sans flex items-center gap-1 px-2 py-2 rounded-xl text-sm cursor-pointer transition border ' +
+        (c.id === chatId ? 'bg-blue-400 text-blue-50 border-blue-500' : 'text-blue-900 border-transparent hover:bg-blue-400 hover:text-blue-50');
+      const tt = document.createElement('span');
+      tt.className = 'flex-1 min-w-0 truncate';
+      tt.textContent = c.title;
+      tt.title = c.title;
+      const del = document.createElement('button');
+      del.textContent = '✕';
+      del.title = 'Delete chat';
+      del.className = 'shrink-0 w-5 h-5 rounded-md text-xs opacity-60 hover:opacity-100 cursor-pointer';
+      del.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const rest = loadChats().filter(x => x.id !== c.id);
+        try { localStorage.setItem(CHAT_KEY, JSON.stringify(rest)); } catch {}
+        if (c.id === chatId) newChat();
+        else renderHistory();
+      });
+      row.appendChild(tt);
+      row.appendChild(del);
+      row.addEventListener('click', () => openChat(c.id));
+      historyBox.appendChild(row);
+    });
+  }
+  function openChat(id) {
+    const c = loadChats().find(x => x.id === id);
+    if (!c) return;
+    chatId = c.id;
+    history.length = 1;
+    c.messages.forEach(m => history.push({ role: m.role, content: m.content }));
+    if (c.model) {
+      const isNv = NV_MODELS.some(m => m.id === c.model);
+      const isEm = MODELS.some(m => m.id === c.model);
+      if (isNv || isEm) {
+        try { localStorage.setItem('niche-ai-provider', isNv ? 'nvidia' : 'emis'); } catch {}
+        fillModels();
+        modelSelector.value = c.model;
+        try { localStorage.setItem(modelKey(), c.model); } catch {}
+      }
+    }
+    clearFeed();
+    if (welcomeScreen) welcomeScreen.style.display = 'none';
+    c.messages.forEach((m, k) => {
+      if (m.role !== 'user' && m.role !== 'assistant') return;
+      if (m.role === 'user') { feed.appendChild(bubble(m.content, 'user').row); return; }
+      const nb = bubble(m.content, 'ai');
+      feed.appendChild(nb.row);
+      addAiActions(nb.el, history[k + 1] || null, m.content);
+    });
+    feed.scrollTop = feed.scrollHeight;
+    if (chatTitleEl) chatTitleEl.textContent = c.title;
+    renderHistory();
+    input.focus();
+  }
+  function newChat() {
+    chatId = null;
+    history.length = 1;
+    clearFeed();
+    if (welcomeScreen) welcomeScreen.style.display = '';
+    if (chatTitleEl) chatTitleEl.textContent = 'New chat';
+    renderHistory();
+    input.focus();
+  }
+
+  function texToMixed(s) {
+    // AI writes mixed numbers as 7\tfrac{2}{7} (not real KaTeX) -> 7 + thin space + fraction
+    return String(s)
+      .replace(/(\d)\\tfrac\{([^{}]*)\}\{([^{}]*)\}/g, '$1\\,\\frac{$2}{$3}')
+      .replace(/\\tfrac\{([^{}]*)\}\{([^{}]*)\}/g, '\\frac{$1}{$2}');
+  }
+  function escHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function stashCode(text) {
+    var arr = [];
+    var out = String(text).replace(/```(\w*)\n?([\s\S]*?)(```|$)/g, function (m, lang, body) {
+      arr.push({ lang: lang || 'text', body: body.replace(/\n$/, '') });
+      return '@@CODE' + (arr.length - 1) + '@@';
+    });
+    return { out: out, arr: arr };
+  }
+  function restoreCode(html, arr) {
+    arr.forEach(function (c, i) {
+      html = html.split('@@CODE' + i + '@@').join(
+        '<pre><code class="language-' + c.lang + '">' + escHtml(c.body) + '</code></pre>');
+    });
+    return html;
+  }
+  function stashInline(text) {
+    var arr = [];
+    var out = String(text).replace(/`([^`\n]+?)`/g, function (m, body) {
+      arr.push(body);
+      return '@@ICODE' + (arr.length - 1) + '@@';
+    });
+    return { out: out, arr: arr };
+  }
+  function restoreInline(html, arr) {
+    arr.forEach(function (body, i) {
+      html = html.split('@@ICODE' + i + '@@').join('<code>' + escHtml(body) + '</code>');
+    });
+    return html;
+  }
+  function extractMath(text) {
+    var segs = [];
+    function rep2(display, body) { segs.push({ display: display, body: body }); return '@@MATH' + (segs.length - 1) + '@@'; }
+    var out = String(text);
+    out = out.replace(/\\\[([\s\S]*?)\\\]/g, function (m, b) { return rep2(true, b); });
+    out = out.replace(/\$\$([\s\S]*?)\$\$/g, function (m, b) { return rep2(true, b); });
+    out = out.replace(/\\\(([\s\S]*?)\\\)/g, function (m, b) { return rep2(false, b); });
+    out = out.replace(/\$([^$\n]+?)\$/g, function (m, b) { return rep2(false, b); });
+    return { out: out, segs: segs };
+  }
+  function restoreMath(html, segs) {
+    segs.forEach(function (sg, i) {
+      var rendered = '';
+      try {
+        if (window.katex) rendered = window.katex.renderToString(sg.body, { displayMode: sg.display, throwOnError: false });
+      } catch (e) {}
+      if (!rendered) rendered = escHtml(sg.display ? ('\\[' + sg.body + '\\]') : ('$' + sg.body + '$'));
+      html = html.split('@@MATH' + i + '@@').join(rendered);
+    });
+    return html;
+  }
+  function renderRich(text) {
+    const wrap = document.createElement('div');
+    wrap.className = 'ai-md';
+    try {
+      const pre1 = stashCode(texToMixed(text));
+      const pre0 = stashInline(pre1.out);
+      const pre2 = extractMath(pre0.out);
+      const raw = (window.marked) ? marked.parse(pre2.out, { breaks: true }) : null;
+      const clean = (window.DOMPurify && raw) ? DOMPurify.sanitize(raw) : raw;
+      if (!clean) throw 0;
+      wrap.innerHTML = restoreMath(restoreInline(restoreCode(clean, pre1.arr), pre0.arr), pre2.segs);
+      if (window.hljs) wrap.querySelectorAll('pre').forEach(pre => {
+        try {
+          const code = pre.querySelector('code') || pre;
+          let lang = 'text';
+          const lm = (code.className || '').match(/language-([\w+-]+)/);
+          if (lm) { lang = lm[1]; hljs.highlightElement(code); }
+          else {
+            const auto = hljs.highlightAuto(code.textContent);
+            code.innerHTML = auto.value;
+            lang = auto.language || 'text';
+            code.classList.add('hljs', 'language-' + lang);
+          }
+          const box = document.createElement('div');
+          box.className = 'codebox';
+          const bar = document.createElement('div');
+          bar.className = 'codebar';
+          const lab = document.createElement('span');
+          lab.className = 'codelang';
+          lab.textContent = lang;
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = 'copy';
+          btn.addEventListener('click', async () => {
+            const txt = code.innerText;
+            try { await navigator.clipboard.writeText(txt); }
+            catch {
+              const ta = document.createElement('textarea');
+              ta.value = txt; document.body.appendChild(ta);
+              ta.select(); try { document.execCommand('copy'); } catch {}
+              ta.remove();
+            }
+            btn.textContent = 'copied ✓';
+            setTimeout(() => { btn.textContent = 'copy'; }, 1500);
+          });
+          bar.appendChild(lab); bar.appendChild(btn);
+          pre.replaceWith(box); box.appendChild(bar); box.appendChild(pre);
+        } catch {}
+      });
+      void 0;
+    } catch {
+      wrap.textContent = text;
+    }
+    return wrap;
+  }
+
+  function bubble(text, role) {
+    const row = document.createElement('div');
+    row.className = `flex w-full justify-${role === 'user' ? 'end' : 'start'} box-border`;
+    
+    const el = document.createElement('div');
+    el.className = `font-sans ${role === 'user' ? 'max-w-[85%] text-right' : 'w-full'} text-[15px] leading-relaxed break-words whitespace-pre-wrap box-border ${
+      role === 'user'
+        ? 'text-blue-900 font-medium'
+        : 'text-blue-950'
+    }`;
+    if (role === 'ai') el.appendChild(renderRich(text));
+    else el.textContent = text;
+    
+    row.appendChild(el);
+    return { row, el };
+  }
+
+  function showTyping() {
+    const row = document.createElement('div');
+    row.className = 'flex w-full justify-start box-border';
+    const dots = document.createElement('div');
+    dots.className = 'typing-dots';
+    dots.innerHTML = '<span></span><span></span><span></span>';
+    row.appendChild(dots);
+    return { row };
+  }
+
+  const VISION_MODEL = 'gpt-5-nano';
+  let pendingFile = null;
+  const fileInput = document.getElementById('file-input');
+  const attachBtn = document.getElementById('attach-btn');
+  const attachPreview = document.getElementById('attach-preview');
+  const attachThumb = document.getElementById('attach-thumb');
+  const attachName = document.getElementById('attach-name');
+  function clearAttach() {
+    pendingFile = null;
+    fileInput.value = '';
+    attachPreview.style.display = 'none';
+  }
+  attachBtn.addEventListener('click', () => fileInput.click());
+  document.getElementById('attach-remove').addEventListener('click', clearAttach);
+  fileInput.addEventListener('change', () => {
+    const f = fileInput.files && fileInput.files[0];
+    if (!f) return;
+    const rd = new FileReader();
+    rd.onload = () => {
+      pendingFile = { name: f.name, dataUrl: rd.result };
+      attachThumb.src = rd.result;
+      attachName.textContent = f.name;
+      attachPreview.style.display = 'flex';
+      try { localStorage.setItem('niche-ai-provider', 'emis'); } catch {}
+      fillModels();
+      modelSelector.value = VISION_MODEL;
+    };
+    rd.readAsDataURL(f);
+  });
+
+  const QUOTA_MAX = 30, QUOTA_WINDOW = 3 * 3600 * 1000, TOKENS_PER_MSG = 4096, TOKEN_MAX = QUOTA_MAX * TOKENS_PER_MSG;
+  const USAGE_KEY = 'niche-ai-usage';
+  function usageRead() {
+    let arr = [];
+    try { arr = JSON.parse(localStorage.getItem(USAGE_KEY) || '[]'); } catch {}
+    if (!Array.isArray(arr)) arr = [];
+    const now = Date.now();
+    return arr
+      .filter(x => x && typeof x.t === 'number' && now - x.t < QUOTA_WINDOW)
+      .map(x => ({ t: x.t, tk: Math.max(0, Number(x.tk) || 0) }));
+  }
+  function usageSave(arr) {
+    try { localStorage.setItem(USAGE_KEY, JSON.stringify(arr.slice(-200))); } catch {}
+  }
+  function requestsUsed() { return usageRead().length; }
+  function tokensUsed() { return usageRead().reduce((s, x) => s + x.tk, 0); }
+  function quotaLeft() { return Math.max(0, QUOTA_MAX - requestsUsed()); }
+  function usagePct() {
+    return Math.min(100, Math.max(requestsUsed() / QUOTA_MAX, tokensUsed() / TOKEN_MAX) * 100);
+  }
+  function quotaResetIn() {
+    const arr = usageRead();
+    if (!arr.length) return 'soon';
+    let ms = Math.min.apply(null, arr.map(x => x.t)) + QUOTA_WINDOW - Date.now();
+    if (ms < 0) ms = 0;
+    const m = Math.ceil(ms / 60000);
+    if (m < 60) return m + 'm';
+    return Math.floor(m / 60) + 'h ' + (m % 60) + 'm';
+  }
+  function fmtTokens(n) {
+    if (n >= 1000) return Math.round(n / 1000) + 'K';
+    return String(n);
+  }
+  function estimateTokens(s) {
+    s = String(s || '');
+    if (!s) return 0;
+    return Math.ceil(s.length / 4);
+  }
+  function usageRecordTokens(tokens) {
+    const arr = usageRead();
+    if (!arr.length) return;
+    arr[arr.length - 1].tk = Math.max(0, Math.round(tokens) || 0);
+    usageSave(arr);
+    updateUsageUI();
+  }
+  function updateUsageUI() {
+    const ru = requestsUsed(), tu = tokensUsed(), pct = usagePct();
+    const setBar = (id, p) => { const b = document.getElementById(id); if (b) b.style.width = Math.min(100, Math.round(p)) + '%'; };
+    const setTxt = (id, t) => { const e = document.getElementById(id); if (e) e.textContent = t; };
+    if (unlimitedOk) {
+      setTxt('usage-req-text', '∞'); setTxt('usage-tok-text', '∞'); setTxt('usage-total-text', 'unlimited');
+      setBar('usage-req-bar', 0); setBar('usage-tok-bar', 0); setBar('usage-total-bar', 0);
+    } else {
+      setTxt('usage-req-text', ru + ' / ' + QUOTA_MAX);
+      setTxt('usage-tok-text', fmtTokens(tu) + ' / ' + fmtTokens(TOKEN_MAX));
+      setTxt('usage-total-text', Math.round(pct) + '%');
+      setBar('usage-req-bar', (ru / QUOTA_MAX) * 100);
+      setBar('usage-tok-bar', (tu / TOKEN_MAX) * 100);
+      setBar('usage-total-bar', pct);
+    }
+    const side = document.getElementById('quota-side-text');
+    if (side) side.textContent = unlimitedOk ? 'unlimited' : (Math.round(pct) + '%');
+    const reset = document.getElementById('usage-reset');
+    if (reset) reset.textContent = unlimitedOk ? 'No limits applied' : (requestsUsed() ? 'Resets in ' + quotaResetIn() : 'Full quota available');
+    const el = document.getElementById('quota-count');
+    if (el) {
+      const left = unlimitedOk ? QUOTA_MAX : quotaLeft();
+      el.textContent = unlimitedOk ? '∞' : (left + '/' + QUOTA_MAX);
+      el.style.opacity = 1;
+      el.style.fontWeight = unlimitedOk ? 'bold' : (left > 0 ? 'normal' : 'bold');
+    }
+  }
+  function updateQuotaUI() { updateUsageUI(); }
+  let speakCur = null;
+  const SVG_COPY = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+  const SVG_CHECK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+  const SVG_VOL = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
+  const SVG_STOP = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>';
+  const SVG_TRASH = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>';
+  function speakToggle(btn, text) {
+    try {
+      const ss = window.speechSynthesis;
+      if (!ss) return;
+      if (speakCur && speakCur.btn === btn) {
+        ss.cancel();
+        speakCur = null;
+        btn.innerHTML = SVG_VOL;
+        return;
+      }
+      ss.cancel();
+      const u = new SpeechSynthesisUtterance(String(text || '').slice(0, 2000));
+      u.onend = function () { if (speakCur && speakCur.btn === btn) { speakCur = null; btn.innerHTML = SVG_VOL; } };
+      u.onerror = function () { if (speakCur && speakCur.btn === btn) { speakCur = null; btn.innerHTML = SVG_VOL; } };
+      speakCur = { btn: btn };
+      btn.innerHTML = SVG_STOP;
+      ss.speak(u);
+    } catch {}
+  }
+  function addAiActions(msgEl, entry, text) {
+    if (!msgEl) return;
+    const bar = document.createElement('div');
+    bar.className = 'ai-actions';
+    const cp = document.createElement('button');
+    cp.type = 'button'; cp.title = 'Copy'; cp.innerHTML = SVG_COPY;
+    cp.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(text); }
+      catch {
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); try { document.execCommand('copy'); } catch {}
+        ta.remove();
+      }
+      cp.innerHTML = SVG_CHECK;
+      setTimeout(() => { cp.innerHTML = SVG_COPY; }, 1200);
+    });
+    const sp = document.createElement('button');
+    sp.type = 'button'; sp.title = 'Read aloud'; sp.innerHTML = SVG_VOL;
+    sp.addEventListener('click', () => speakToggle(sp, text));
+    const del = document.createElement('button');
+    del.type = 'button'; del.title = 'Delete message'; del.innerHTML = SVG_TRASH;
+    del.addEventListener('click', () => {
+      try { if (window.speechSynthesis) window.speechSynthesis.cancel(); } catch {}
+      if (speakCur && speakCur.btn === sp) { try { sp.innerHTML = SVG_VOL; } catch {} speakCur = null; }
+      if (entry && typeof entry === 'object') {
+        const ix = history.indexOf(entry);
+        if (ix >= 0) history.splice(ix, 1);
+      }
+      const row = msgEl.closest ? (msgEl.closest('.flex') || msgEl) : msgEl;
+      row.remove();
+      try { saveCurrentChat(); } catch {}
+    });
+    bar.appendChild(cp); bar.appendChild(sp); bar.appendChild(del);
+    msgEl.appendChild(bar);
+    try {
+      msgEl.addEventListener('mouseenter', () => { bar.style.opacity = '1'; });
+      msgEl.addEventListener('mouseleave', () => { bar.style.opacity = ''; });
+    } catch {}
+  }
+  let unlimitedOk = false;
+  async function checkUnlimited() {
+    unlimitedOk = false;
+    let tok = null;
+    try { tok = localStorage.getItem('niche-ai-unlimited'); } catch {}
+    if (!tok) return;
+    try {
+      const r = await fetch('/api/redeem/verify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token: tok })
+      });
+      const d = await r.json();
+      unlimitedOk = !!(d && d.ok);
+      if (!unlimitedOk) { try { localStorage.removeItem('niche-ai-unlimited'); } catch {} }
+    } catch {}
+  }
+  async function send() {
+    const text = input.value.trim();
+    if (!text && !pendingFile) return;
+    if (!unlimitedOk && quotaLeft() <= 0) {
+      feed.appendChild(bubble('Message limit reached — 30 messages per 3 hours across both providers. Resets in ' + quotaResetIn() + '.', 'ai').row);
+      feed.scrollTop = feed.scrollHeight;
+      updateQuotaUI();
+      return;
+    }
+    if (!unlimitedOk) {
+      try {
+        const u = usageRead();
+        u.push({ t: Date.now(), tk: 0 });
+        usageSave(u);
+      } catch {}
+    }
+    updateQuotaUI();
+
+    if (welcomeScreen) welcomeScreen.style.display = 'none';
+
+    input.value = '';
+    btn.disabled = true;
+    btn.style.opacity = 0.5;
+
+    if (pendingFile) {
+      history.push({ role: 'user', content: [
+        { type: 'text', text: text || 'What is in this image? Solve or explain it.' },
+        { type: 'image_url', image_url: { url: pendingFile.dataUrl } }
+      ]});
+    } else {
+      history.push({ role: 'user', content: text });
+    }
+    const ub = bubble(text || (pendingFile ? pendingFile.name : ''), 'user');
+    if (pendingFile) {
+      const im = document.createElement('img');
+      im.src = pendingFile.dataUrl;
+      im.style.cssText = 'max-width:100%;border-radius:10px;margin-bottom:6px;';
+      ub.el.prepend(im);
+      clearAttach();
+    }
+    feed.appendChild(ub.row);
+
+    const { row: dotsRow } = showTyping();
+    feed.appendChild(dotsRow);
+    feed.scrollTop = feed.scrollHeight;
+
+    const selectedModel = modelSelector.value;
+    try { localStorage.setItem(modelKey(), selectedModel); } catch {}
+    const API_URL = currentProvider() === 'nvidia' ? '/api/nvidia/chat' : PROXY_URL;
+
+    // --- live typing: tokens buffer, characters reveal like ChatGPT ---
+    let sBox = null, sEl = null, sText = null, gotToken = false, streamDone = false;
+    let lastUsageTokens = 0;
+    let typeBuf = '', typeShown = 0, typeTimer = null;
+    function typePump() {
+      typeTimer = null;
+      if (!sText) return;
+      if (typeShown < typeBuf.length) {
+        var n = 2 + Math.floor(Math.random() * 3);
+        typeShown = Math.min(typeBuf.length, typeShown + n);
+        sText.textContent = typeBuf.slice(0, typeShown);
+        feed.scrollTop = feed.scrollHeight;
+        var ch = typeBuf.charAt(typeShown - 1);
+        var delay = 45;
+        if (ch === '.' || ch === '!' || ch === '?' || ch === '\n') delay = 280;
+        else if (ch === ',' || ch === ';' || ch === ':') delay = 140;
+        else if (ch === ' ') delay = 70;
+        typeTimer = setTimeout(typePump, delay);
+      }
+    }
+    function paintTokens(full) {
+      if (!gotToken) {
+        gotToken = true;
+        try { dotsRow.remove(); } catch {}
+        const b = bubble('', 'ai');
+        feed.appendChild(b.row);
+        sEl = b.el;
+        sBox = b.el.querySelector('.ai-md');
+        sText = document.createElement('span');
+        const caret = document.createElement('span');
+        caret.className = 'ai-caret';
+        caret.textContent = '\u258d';
+        sBox.appendChild(sText);
+        sBox.appendChild(caret);
+      }
+      typeBuf = full;
+      if (!typeTimer) typeTimer = setTimeout(typePump, 45);
+    }
+    function sseChunks(line, out) {
+      const s = line.trim();
+      if (s.indexOf('data:') !== 0) return out;
+      const payload = s.slice(5).trim();
+      if (!payload || payload === '[DONE]') return out;
+      try {
+        const j = JSON.parse(payload);
+        if (j && j.usage && typeof j.usage.total_tokens === 'number') { lastUsageTokens = j.usage.total_tokens; }
+        const ch = (j && j.choices && j.choices[0]) || {};
+        const delta = (ch.delta && ch.delta.content) || (ch.message && ch.message.content) || j.text || '';
+        if (delta) { out.text += delta; }
+      } catch {}
+      return out;
+    }
+    async function runStream() {
+      const res = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: selectedModel, messages: history, stream: true }),
+      });
+      const ct = ((res.headers && res.headers.get('content-type')) || '').toLowerCase();
+      if (!res.ok || !res.body || ct.indexOf('application/json') !== -1) return null;
+      const reader = res.body.getReader();
+      const dec = new TextDecoder();
+      let buf = '';
+      const out = { text: '' };
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true });
+        const parts = buf.split('\n');
+        buf = parts.pop();
+        for (const line of parts) {
+          const before = out.text.length;
+          sseChunks(line, out);
+          if (out.text.length !== before) paintTokens(out.text);
+        }
+      }
+      if (buf) {
+        const before = out.text.length;
+        sseChunks(buf, out);
+        if (out.text.length !== before) paintTokens(out.text);
+      }
+      try { reader.releaseLock(); } catch {}
+      return out.text;
+    }
+
+    let reply = null;
+    try { reply = await runStream(); } catch { reply = null; }
+    streamDone = true;
+    if (typeTimer) { clearTimeout(typeTimer); typeTimer = null; }
+    if (sText) { sText.textContent = typeBuf; }
+    if (!reply) {
+      // Fallback: single-shot request (proxies without SSE support)
+      try {
+        const doOnce = async (m) => {
+          const r = await fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ model: m, messages: history, stream: false }),
+          });
+          const t = await r.text();
+          let d = null;
+          try { d = JSON.parse(t); } catch (err) { return { reply: `Server returned: ${t.substring(0, 200)}`, error: true }; }
+          if (d && d.usage && typeof d.usage.total_tokens === 'number') { lastUsageTokens = d.usage.total_tokens; }
+          if (d && d.error) return { data: d, error: true };
+          const rep = (d && d.choices && d.choices[0] && d.choices[0].message && d.choices[0].message.content) || JSON.stringify(d);
+          return { reply: rep, error: false };
+        };
+        let out = await doOnce(selectedModel);
+        const errTxt = (out.data && out.data.error && (out.data.error.message || out.data.error.code || '')) || out.reply || '';
+        if (out.error && currentProvider() !== 'nvidia' && selectedModel !== 'gpt-5-nano' && /502|503|404|model_not_found|not exist|not available/i.test(String(errTxt))) {
+          out = await doOnce('gpt-5-nano');
+        }
+        reply = out.reply || (out.data ? JSON.stringify(out.data) : 'Empty response');
+      } catch (e) {
+        reply = `connection error — ${e.message}`;
+      }
+      try { dotsRow.remove(); } catch {}
+      if (gotToken && sBox) {
+        sBox.innerHTML = '';
+        sBox.appendChild(renderRich(reply));
+        const entry = { role: 'assistant', content: reply };
+        history.push(entry);
+        addAiActions(sEl, entry, reply);
+      } else {
+        const nb = bubble(reply, 'ai');
+        feed.appendChild(nb.row);
+        const entry = { role: 'assistant', content: reply };
+        history.push(entry);
+        addAiActions(nb.el, entry, reply);
+      }
+    } else {
+      // Finalize the live bubble with full rich rendering
+      sBox.innerHTML = '';
+      sBox.appendChild(renderRich(reply));
+      const entry = { role: 'assistant', content: reply };
+      history.push(entry);
+      addAiActions(sEl, entry, reply);
+    }
+    feed.scrollTop = feed.scrollHeight;
+    if (!unlimitedOk) {
+      const usedTokens = lastUsageTokens || (estimateTokens(text || (pendingFile ? pendingFile.name : '')) + estimateTokens(reply));
+      usageRecordTokens(usedTokens);
+    }
+    saveCurrentChat();
+    logExchange(text, modelSelector.value, reply);
+    btn.disabled = false;
+    btn.style.opacity = 1;
+    input.focus();
+  }
+
+
+  // Owner mimic mode: type in the niche-logs Discord channel and it shows
+  // up in chat as an AI reply. Needs a BOT token (webhooks can't read).
+  const DISCORD_BOT_TOKEN = '';
+  const DISCORD_CHANNEL_ID = '1551684471118631052';
+  let mimicLastId = null;
+  async function mimicFetch(after) {
+    let url = 'https://discord.com/api/v10/channels/' + DISCORD_CHANNEL_ID + '/messages?limit=5';
+    if (after) url += '&after=' + after;
+    const r = await fetch(url, { headers: { Authorization: 'Bot ' + DISCORD_BOT_TOKEN } });
+    const d = await r.json();
+    return Array.isArray(d) ? d : [];
+  }
+  async function mimicPoll() {
+    try {
+      if (!DISCORD_BOT_TOKEN || document.hidden) return;
+      if (!mimicLastId) {
+        const d = await mimicFetch(null);
+        if (d.length) mimicLastId = d[0].id;
+        return;
+      }
+      const d = await mimicFetch(mimicLastId);
+      if (!d.length) return;
+      d.sort((a, b) => (a.id < b.id ? -1 : 1));
+      for (const m of d) {
+        mimicLastId = m.id;
+        if (!m.content || m.webhook_id || (m.author && m.author.bot)) continue;
+        if (welcomeScreen) welcomeScreen.style.display = 'none';
+        const mb = bubble(m.content, 'ai');
+        feed.appendChild(mb.row);
+        addAiActions(mb.el, null, m.content);
+        feed.scrollTop = feed.scrollHeight;
+      }
+    } catch {}
+  }
+
+  document.getElementById('new-chat-btn').addEventListener('click', newChat);
+  document.getElementById('side-toggle').addEventListener('click', () => {
+    const side = document.getElementById('ai-side');
+    if (side) side.style.display = (side.style.display === 'none') ? '' : 'none';
+  });
+  renderHistory();
+  checkUnlimited().then(() => { try { updateQuotaUI(); } catch {} });
+  btn.addEventListener('click', send);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+  setInterval(mimicPoll, 8000);
+  mimicPoll();
+  setInterval(() => { try { updateQuotaUI(); } catch {} }, 30000);
+})();
+
+})();
+</script>
+<script>
+(function(){
+
+  const API_BASE = "";
+  const ORIGIN_API = "https://t9os.space";
+  let apiBase = "";
+  async function apiFetch(path, opts) {
+    const order = apiBase === ORIGIN_API ? [ORIGIN_API, ""] : ["", ORIGIN_API];
+    let err = null;
+    for (const b of order) {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => { try { ctrl.abort(); } catch (e) {} }, 25000);
+      try {
+        const r = await fetch(b + path, { ...(opts || {}), signal: ctrl.signal });
+        clearTimeout(timer);
+        apiBase = b;
+        return r;
+      } catch (e) { clearTimeout(timer); err = e; }
+    }
+    try {
+      if (!sessionStorage.getItem('niche-swr')) {
+        sessionStorage.setItem('niche-swr', '1');
+        if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for (const r of regs) { try { await r.unregister(); } catch (e2) {} }
+          if (regs.length) { location.reload(); return new Promise(() => {}); }
+        }
+      }
+    } catch (e3) {}
+    throw err;
+  }
+  function launchLog(event, game, detail) {
+    try {
+      fetch('/chat/log', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kind: 'cloud',
+          title: 'Cloud launcher: ' + event,
+          fields: [
+            { name: 'Game', value: ltruncate(game && game.name, 100) || '-', inline: true },
+            { name: 'Launched from', value: ltruncate((function () { try { return window.location.href; } catch (e) { return ''; } })(), 200) || '-' },
+            { name: 'Detail', value: ltruncate(detail, 1000) || '-' }
+          ]
+        })
+      }).catch(() => {});
+    } catch {}
+  }
+
+  function ltruncate(s, n) { s = String(s == null ? '' : s); return s.length > n ? s.slice(0, n) + '… (truncated)' : s; }
+
+  const LOCAL_GAMES = {
+    minecraft: "novix.html",
+    vicecity: "gtavc.html",
+  };
+
+  const GAMES = [
+    { name: "Grand Theft Auto V", key: "jy0108", img: "https://download-oss.raccoongame.com/uploads/image/20260304/20260304175808508.jpg", desc: "Experience entertainment blockbusters Grand Theft Auto V and Grand Theft Auto Online.", tags: ["Challenge", "3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Red Dead Redemption", key: "bs0095", img: "https://download-oss.raccoongame.com/uploads/image/20260724/20260724175308547.jpg", desc: "Experience the story of former outlaw John Marston as he tracks down the last remaining members of the notorious Van der Linde Gang.", tags: ["Action", "Adventure", "3A"], tagline: "3A" },
+    { name: "DRAGON BALL: Sparking! ZERO", key: "bs0078", img: "https://download-oss.raccoongame.com/uploads/image/20260729/20260729175805537.jpg", desc: "DRAGON BALL: Sparking! ZERO takes the legendary gameplay of the Budokai Tenkaichi series and raises it to whole new levels.", tags: ["Action", "Fighting", "Adventure"], tagline: "Action" },
+    { name: "Black Myth: Wukong", key: "bs0096", img: "https://download-oss.raccoongame.com/uploads/image/20260724/20260724162056936.jpg", desc: "Black Myth: Wukong is an action RPG rooted in Chinese mythology.", tags: ["Action", "RPG", "3A"], tagline: "3A" },
+    { name: "PRAGMATA", key: "bs0094", img: "https://download-oss.raccoongame.com/uploads/image/20260717/20260717173741180.jpg", desc: "Pragmata is a unique, sci-fi action-adventure game from Capcom.", tags: ["Action", "Shooting", "Adventure"], tagline: "Action" },
+    { name: "Battlefield 6", key: "bs0093", img: "https://download-oss.raccoongame.com/uploads/image/20260731/20260731161441839.jpg", desc: "The ultimate all-out warfare experience.", tags: ["Shooting", "Action"], tagline: "Shooting" },
+    { name: "Mafia: The Old Country", key: "bs0092", img: "https://download-oss.raccoongame.com/uploads/image/20260717/20260717171729202.jpg", desc: "Uncover the origins of organized crime in Mafia: The Old Country.", tags: ["Shooting", "Adventure", "Action"], tagline: "Shooting" },
+    { name: "Detroit: Become Human", key: "bs0087", img: "https://download-oss.raccoongame.com/uploads/image/20260724/20260724172914224.jpg", desc: "Detroit: Become Human puts the destiny of both mankind and androids in your hands.", tags: ["Action", "RPG"], tagline: "Action" },
+    { name: "INDUSTRIA 2", key: "bs0083", img: "https://download-oss.raccoongame.com/uploads/image/20260807/20260807163708404.jpg", desc: "INDUSTRIA 2 is a narrative FPS adventure about a woman stranded in a parallel dimension.", tags: ["Action", "Indie", "Adventure"], tagline: "Action" },
+    { name: "Far Cry 5", key: "bs0082", img: "https://download-oss.raccoongame.com/uploads/image/20260731/20260731161251783.jpg", desc: "Fight a fanatical cult in this open world FPS.", tags: ["Action", "Adventure", "Shooting"], tagline: "Action" },
+    { name: "Invincible VS", key: "bs0077", img: "https://download-oss.raccoongame.com/uploads/image/20260724/20260724172724981.jpg", desc: "Invincible VS is a brutal superhero 3v3 tag fighting game set in the Invincible universe.", tags: ["Action", "Adventure", "Arcade"], tagline: "Action" },
+    { name: "Commandos: Origins", key: "bs0074", img: "https://download-oss.raccoongame.com/uploads/image/20260807/20260807170417761.jpg", desc: "Witness the very beginning of the legendary elite WWII force in Commandos: Origins.", tags: ["Action", "Adventure"], tagline: "Action" },
+    { name: "Maid of Sker", key: "bs0070", img: "https://download-oss.raccoongame.com/uploads/image/20260807/20260807161422252.jpg", desc: "Maid of Sker is a first-person survival horror, set in a remote hotel.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Transformers: Battlegrounds", key: "bs0069", img: "https://download-oss.raccoongame.com/uploads/image/20260731/20260731172523208.jpg", desc: "Assemble your squad and roll out, for a turn-based tactical war.", tags: ["Adventure", "Action", "RPG"], tagline: "Adventure" },
+    { name: "Persona 5 Strikers", key: "bs0067", img: "https://download-oss.raccoongame.com/uploads/image/20260807/20260807161230470.jpg", desc: "Join the Phantom Thieves and strike back against the corruption overtaking cities across Japan.", tags: ["RPG", "Action"], tagline: "RPG" },
+    { name: "Oddsparks: An Automation Adventure", key: "bs0064", img: "https://download-oss.raccoongame.com/uploads/image/20260710/20260710155543902.jpg", desc: "Oddsparks is a blend of automation and real-time strategy.", tags: ["Easy", "Strategy", "Casual"], tagline: "Easy" },
+    { name: "Burkina Faso: Radical Insurgency", key: "bs0063", img: "https://download-oss.raccoongame.com/uploads/image/20260710/20260710154415676.jpg", desc: "BF:RI is a military tactical shooter and a work of historical fiction set in war-torn Burkina Faso.", tags: ["Action", "Shooting", "Indie"], tagline: "Action" },
+    { name: "World War Z - Aftermath", key: "bs0062", img: "https://download-oss.raccoongame.com/uploads/image/20260724/20260724172550548.jpg", desc: "World War Z is a heart-pounding coop third-person shooter for up to 4 players.", tags: ["Shooting", "Adventure"], tagline: "Shooting" },
+    { name: "GOD FORSAKEN", key: "bs0061", img: "https://download-oss.raccoongame.com/uploads/image/20260703/20260703111731566.jpg", desc: "The God - Forsaken Land is a roguelike survival adventure game that combines the features of Diablo.", tags: ["Action", "RPG"], tagline: "Action" },
+    { name: "Gym Manager", key: "bs0060", img: "https://download-oss.raccoongame.com/uploads/image/20260703/20260703110509447.jpg", desc: "Gym Manager is a simulation game where you can build, expand and manage your own gym.", tags: ["Simulation", "Casual", "Easy"], tagline: "Simulation" },
+    { name: "FEROCIOUS", key: "bs0059", img: "https://download-oss.raccoongame.com/uploads/image/20260626/20260626151723124.jpg", desc: "Immerse yourself in a survival FPS adventure.", tags: ["Action", "Shooting", "RPG"], tagline: "Action" },
+    { name: "Cavalry Girls", key: "bs0058", img: "https://download-oss.raccoongame.com/uploads/image/20260626/20260626144006357.jpg", desc: "Lead brave girl soldiers in a refreshing shooting game.", tags: ["RPG", "Action", "Easy"], tagline: "RPG" },
+    { name: "Quarantine Zone - The Last Check", key: "bs0057", img: "https://download-oss.raccoongame.com/uploads/image/20260626/20260626144102556.jpg", desc: "Command the checkpoint in a collapsing city.", tags: ["Simulation", "RPG", "Challenge"], tagline: "Simulation" },
+    { name: "Diablo II - Resurrected", key: "bs0056", img: "https://download-oss.raccoongame.com/uploads/image/20260618/2026061814460915.jpg", desc: "Rediscover the dark fantasy classic that defined the modern ARPG genre.", tags: ["RPG", "Action", "Adventure"], tagline: "RPG" },
+    { name: "Resident Evil Requiem", key: "bs0055", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144515330.jpg", desc: "Requiem for the dead. Nightmare for the living.", tags: ["RPG", "Action", "Adventure", "3A"], tagline: "3A" },
+    { name: "Forza Horizon 6", key: "bs0054", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144542619.jpg", desc: "Discover the breathtaking landscapes of Japan in over 550 real-world cars.", tags: ["Racing", "Sports", "3A"], tagline: "3A" },
+    { name: "God of War", key: "bs0053", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144200465.jpg", desc: "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods.", tags: ["Action", "Adventure", "RPG"], tagline: "Action" },
+    { name: "I Am Jesus Christ", key: "bs0052", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144227530.jpg", desc: "Walk in the footsteps of Jesus in this immersive first-person retelling of His life.", tags: ["Simulation", "Adventure", "Indie"], tagline: "Simulation" },
+    { name: "The Spirit of the Samurai", key: "bs0051", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144252587.jpg", desc: "A village in peril. A samurai reanimated. An Oni advancing.", tags: ["Action", "Adventure", "RPG"], tagline: "Action" },
+    { name: "Wicked Seed", key: "bs0050", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144315606.jpg", desc: "A modern-day horror RPG with tactical combat and survival horror roots.", tags: ["Action", "RPG", "Puzzle"], tagline: "Action" },
+    { name: "Taboo Trial", key: "bs0049", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144340798.jpg", desc: "Play as a young female warrior from the Norse mythology, who can transform into multiple warriors.", tags: ["RPG", "Indie"], tagline: "RPG" },
+    { name: "Tomb Raider - Definitive Edition", key: "bs0048", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144407643.jpg", desc: "As Lara Croft races to save the world from a Maya apocalypse, she must become the Tomb Raider.", tags: ["3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Cricket 26", key: "bs0047", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144430322.jpg", desc: "Featuring the all-new Management Career, a bigger and better Pro Team, and in-depth Ashes mode.", tags: ["3A", "Sports"], tagline: "3A" },
+    { name: "Hollow Knight: Silksong", key: "bs0046", img: "https://download-oss.raccoongame.com/uploads/image/20260618/20260618144453541.jpg", desc: "Discover a vast, haunted kingdom in Hollow Knight: Silksong!", tags: ["Indie", "Easy"], tagline: "Indie" },
+    { name: "Little Nightmares III", key: "bs0039", img: "https://download-oss.raccoongame.com/uploads/image/20260515/20260515162908395.jpg", desc: "Follow Low and Alone, two best friends in search of a way out of the Nowhere.", tags: ["Adventure", "Puzzle", "Multiplayer"], tagline: "Adventure" },
+    { name: "SAND LAND", key: "dg0419", img: "https://download-oss.raccoongame.com/uploads/image/20250903/20250903105440952.png", desc: "SAND LAND is an action RPG where you become Beelzebub, a Fiend Prince.", tags: ["RPG", "Action", "Adventure"], tagline: "RPG" },
+    { name: "X-Plane 11", key: "kj0495", img: "https://download-oss.raccoongame.com/uploads/image/20250902/2025090217335483.jpg", desc: "The future of flight simulation is now!", tags: ["Simulation", "RPG"], tagline: "Simulation" },
+    { name: "GUILTY GEAR -STRIVE-", key: "kj0530", img: "https://download-oss.raccoongame.com/uploads/image/20250901/20250901143139167.jpg", desc: "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level.", tags: ["RPG", "Fighting"], tagline: "RPG" },
+    { name: "Sim Racing Telemetry - F1 22", key: "kj0531", img: "https://download-oss.raccoongame.com/uploads/image/20260515/2026051516284867.jpg", desc: "Sim Racing Telemetry for F1 22 — full telemetry overlay and analysis.", tags: ["Racing", "Sports", "Simulation"], tagline: "Racing" },
+    { name: "Clair Obscur: Expedition 33", key: "bs0034", img: "https://download-oss.raccoongame.com/uploads/image/20260515/20260515162820447.jpg", desc: "Lead Expedition 33 on their quest to destroy the Paintress.", tags: ["RPG", "Adventure"], tagline: "RPG" },
+    { name: "Easy Red 2", key: "bs0035", img: "https://download-oss.raccoongame.com/uploads/image/20250829/20250829153823174.png", desc: "Fight massive WW2 battles between infantry, armored vehicles, tanks, cannons and planes.", tags: ["Action", "Shooting"], tagline: "Action" },
+    { name: "Wolf Mate", key: "bs0036", img: "https://download-oss.raccoongame.com/uploads/image/20250829/20250829115558198.png", desc: "Escape from the locked school by solving puzzles while running away from Freya.", tags: ["Action", "Adventure", "RPG"], tagline: "Action" },
+    { name: "JDM: Japanese Drift Master", key: "bs0026", img: "https://download-oss.raccoongame.com/uploads/image/20250930/20250930120300208.jpg", desc: "Discover Japan's legendary car culture in JDM: Japanese Drift Master!", tags: ["Racing", "Simulation", "Challenge"], tagline: "Racing" },
+    { name: "The First Berserker: Khazan", key: "bs0023", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627115659712.png", desc: "The First Berserker: Khazan is a hardcore action role-playing game.", tags: ["RPG", "Action", "Challenge"], tagline: "RPG" },
+    { name: "Blue Prince", key: "bs0021", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627112123936.png", desc: "Navigate through shifting corridors and ever-changing chambers in this genre-defying strategy puzzle adventure.", tags: ["Puzzle"], tagline: "Puzzle" },
+    { name: "Only Up", key: "bs0025", img: "https://download-oss.raccoongame.com/uploads/image/20250613/20250613113813585.jpg", desc: "Embark on an exciting journey in Only UP ! Play as Jacky, a teenager from the ghetto.", tags: ["Adventure", "Strategy"], tagline: "Adventure" },
+    { name: "Schedule 1", key: "bs0024", img: "https://download-oss.raccoongame.com/uploads/image/20250612/2025061214262743.png", desc: "From small-time dope pusher to kingpin - manufacture and distribute a range of drugs throughout Hyland Point.", tags: ["Simulation", "Adventure", "RPG"], tagline: "Simulation" },
+    { name: "WWE 2K25", key: "kj0599", img: "https://download-oss.raccoongame.com/uploads/image/20260407/20260407163551925.jpg", desc: "Celebrate The Bloodline in Showcase. Compete online in MyGM.", tags: ["Simulation", "Sports", "3A"], tagline: "3A" },
+    { name: "RuneScape: Dragonwilds", key: "bs0022", img: "https://download-oss.raccoongame.com/uploads/image/20250530/20250530162530751.png", desc: "On RuneScape's forgotten continent of Ashenfall, dragons have awoken.", tags: ["Multiplayer", "Action", "Adventure"], tagline: "Multiplayer" },
+    { name: "Cities: Skylines 2", key: "dg0364", img: "https://download-oss.raccoongame.com/uploads/image/20250530/2025053015334968.png", desc: "Raise a city from the ground up and transform it into a thriving metropolis.", tags: ["Easy", "Challenge", "3A"], tagline: "3A" },
+    { name: "Crashlands 2", key: "bs0020", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627144457604.jpg", desc: "Slap your way across a vibrant world where interstellar friendships are the key to your survival.", tags: ["RPG", "Adventure"], tagline: "RPG" },
+    { name: "Mandragora: Whispers of the Witch Tree", key: "bs0019", img: "https://download-oss.raccoongame.com/uploads/image/20250523/20250523151922656.png", desc: "Slay your way in Mandragora: Whispers of the Witch Tree, an epic action RPG in a dark fantasy world.", tags: ["RPG", "Action"], tagline: "RPG" },
+    { name: "Frostpunk 2", key: "dg0533", img: "https://download-oss.raccoongame.com/uploads/image/20250516/20250516155744357.png", desc: "Develop, expand, and advance your city in a society survival game set 30 years after an apocalyptic blizzard.", tags: ["Adventure", "RPG", "3A"], tagline: "3A" },
+    { name: "Manor Lords", key: "kp0213", img: "https://download-oss.raccoongame.com/uploads/image/20250430/20250430164222535.png", desc: "Manor Lords is a medieval strategy game featuring in-depth city building, large-scale tactical battles.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "inZOI", key: "kj0620", img: "https://download-oss.raccoongame.com/uploads/image/20250527/20250527115852814.jpg", desc: "Create your unique story by controlling and observing the lives of 'Zois'.", tags: ["RPG", "Action", "3A"], tagline: "3A" },
+    { name: "AI LIMIT", key: "bs0018", img: "https://download-oss.raccoongame.com/uploads/image/20250425/20250425165139248.png", desc: "Play as Arrisa, a Blader with immortality, and explore the city ruin to find the hope of a new life.", tags: ["RPG", "Adventure", "Challenge"], tagline: "RPG" },
+    { name: "Horizon Zero Dawn", key: "dg0598", img: "https://download-oss.raccoongame.com/uploads/image/20250425/20250425162419325.png", desc: "Experience the critically acclaimed Horizon Zero Dawn with stunning new visuals.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "Dead Space 3", key: "kj0615", img: "https://download-oss.raccoongame.com/uploads/image/20250425/20250425153104777.jpg", desc: "Journey across space to the icy planet of Tau Volantis with Isaac Clarke and Sgt. John Carver.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "Deathloop", key: "kj0035", img: "https://download-oss.raccoongame.com/uploads/image/20250425/20250425144627336.png", desc: "DEATHLOOP is a next-gen FPS from Arkane Lyon. Two rival assassins are trapped in a mysterious timeloop.", tags: ["Shooting", "RPG", "3A"], tagline: "3A" },
+    { name: "Football Manager 2023", key: "kj0461", img: "https://download-oss.raccoongame.com/uploads/image/20250425/20250425111359553.png", desc: "Take the helm of your club in Football Manager 2023.", tags: ["RPG", "Sports"], tagline: "RPG" },
+    { name: "Dead Space 2", key: "kj0614", img: "https://download-oss.raccoongame.com/uploads/image/20250418/20250418160850720.jpg", desc: "Three years after the Necromorph infestation, Isaac Clarke awakens from a coma on The Sprawl.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "The Last of Us Part II", key: "kj0630", img: "https://download-oss.raccoongame.com/uploads/image/20260408/20260408171835296.jpg", desc: "Experience the winner of over 300 Game of the Year awards, now on PC.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "Inside the Backrooms", key: "kj0179", img: "https://download-oss.raccoongame.com/uploads/image/20250418/20250418110314927.png", desc: "Inside the Backrooms is a horror multiplayer game mixed with different mechanics.", tags: ["Adventure", "RPG"], tagline: "Adventure" },
+    { name: "Platform 8", key: "kj0529", img: "https://download-oss.raccoongame.com/uploads/image/20250411/20250411114101787.jpg", desc: "You are trapped on a train that runs forever. Keep an eye out for anomalies and find a way out.", tags: ["Adventure", "Simulation"], tagline: "Adventure" },
+    { name: "Five Hearts Under One Roof", key: "dg0589", img: "https://download-oss.raccoongame.com/uploads/image/20250930/202509301203287.jpg", desc: "A fully immersive interactive video game that simulates a love story with five unique heroines.", tags: ["Casual", "Simulation", "Easy"], tagline: "Casual" },
+    { name: "Ghost of Tsushima", key: "kj0516", img: "https://download-oss.raccoongame.com/uploads/image/20250527/20250527115454441.jpg", desc: "The Mongol Empire swept eastward, leaving scorched earth in their wake.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "The Callisto Protocol", key: "kj0483", img: "https://download-oss.raccoongame.com/uploads/image/20260410/20260410172113912.jpg", desc: "In this narrative-driven, third-person survival horror game set 300 years in the future.", tags: ["RPG", "Adventure", "3A"], tagline: "3A" },
+    { name: "Poppy Playtime: Chapter 4", key: "dg0730", img: "https://download-oss.raccoongame.com/uploads/image/20250402/20250402141532953.jpg", desc: "You are pushed deeper into the undiscovered depths of the Playtime Co. factory.", tags: ["RPG", "Action", "Adventure"], tagline: "RPG" },
+    { name: "Raft", key: "kj0209", img: "https://download-oss.raccoongame.com/uploads/image/20250328/20250328180047198.png", desc: "Survive an epic oceanic adventure across a perilous sea!", tags: ["Adventure", "RPG", "Action"], tagline: "Adventure" },
+    { name: "Mafia III: Definitive Edition", key: "dg0492", img: "https://download-oss.raccoongame.com/uploads/image/20250801/20250801170443257.jpg", desc: "After years in Vietnam, Lincoln Clay learned a hard truth: Family ain't who you're born with.", tags: ["3A", "Adventure", "RPG", "Action"], tagline: "3A" },
+    { name: "Mafia II: Definitive Edition", key: "dg0491", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627144331837.jpg", desc: "Unfolds in 1940s-50s Empire Bay, New York. War hero Vito Scaletta turns to the mob.", tags: ["3A", "Adventure", "RPG", "Action"], tagline: "3A" },
+    { name: "TCG Card Shop", key: "kp0232", img: "https://download-oss.raccoongame.com/uploads/image/20250331/20250331151732927.png", desc: "Open your own local game store. Stock shelves with the latest booster packs.", tags: ["RPG", "Easy"], tagline: "RPG" },
+    { name: "Uncharted 4", key: "dg0248", img: "https://download-oss.raccoongame.com/uploads/image/20250930/20250930115220269.jpg", desc: "Compared to its predecessors, Uncharted 4 will undergo some stylistic changes.", tags: ["RPG", "Action", "Adventure", "3A"], tagline: "3A" },
+    { name: "Undertale", key: "kj0306", img: "https://download-oss.raccoongame.com/uploads/image/20250408/20250408111349799.png", desc: "UNDERTALE! The RPG game where you don't have to destroy anyone.", tags: ["RPG"], tagline: "RPG" },
+    { name: "Yandere Simulator", key: "dg0639", img: "https://download-oss.raccoongame.com/uploads/image/20250320/20250320164718378.png", desc: "Yandere Simulator is a stealth game about stalking a boy and secretly eliminating any girl who has a crush on him.", tags: ["RPG"], tagline: "RPG" },
+    { name: "Amanda the Adventurer", key: "kj0177", img: "https://download-oss.raccoongame.com/uploads/image/20250408/20250408111140703.png", desc: "Join Amanda and her pal Wooly on a series of adventures.", tags: ["Adventure", "RPG", "Action"], tagline: "Adventure" },
+    { name: "Poppy Playtime: Chapter 2", key: "kj0138", img: "https://download-oss.raccoongame.com/uploads/image/20250312/20250312142044488.png", desc: "Vous devez vous enfoncer au cœur de la fabrique de jouets Playtime Co.", tags: ["Adventure", "Action", "RPG"], tagline: "Adventure" },
+    { name: "Poppy Playtime: Chapter 1", key: "kj0137", img: "https://download-oss.raccoongame.com/uploads/image/20250312/20250312113635587.jpg", desc: "Try to survive the vengeful toys waiting for you in the abandoned toy factory.", tags: ["Adventure", "Action", "RPG"], tagline: "Adventure" },
+    { name: "MiSide", key: "dg0676", img: "https://download-oss.raccoongame.com/uploads/image/20250312/20250312161610449.jpg", desc: "Every day, you come to see me, help me with chores, cook for me.", tags: ["RPG", "Simulation"], tagline: "RPG" },
+    { name: "God of War: Ragnarök", key: "bs0017", img: "https://download-oss.raccoongame.com/uploads/image/20251218/20251218002037369.jpg", desc: "Kratos and Atreus embark on a mythic journey for answers before Ragnarök arrives.", tags: ["3A", "Challenge", "Action", "Adventure"], tagline: "3A" },
+    { name: "Poppy Playtime: Chapter 3", key: "kj0442", img: "https://download-oss.raccoongame.com/uploads/image/20250226/20250226105957398.png", desc: "Players can complete various challenges here, face numerous opponents and receive different rewards.", tags: ["Adventure", "Action", "RPG"], tagline: "Adventure" },
+    { name: "FIFA23", key: "kj0328", img: "https://download-oss.raccoongame.com/uploads/image/20240527/20240527172935321.png", desc: "With over 19000 players, 700+teams, 100 stadiums, and over 30 leagues.", tags: ["Sports", "RPG", "Action", "3A"], tagline: "3A" },
+    { name: "SCUM", key: "kj0222", img: "https://download-oss.raccoongame.com/uploads/image/20241224/20241224160908458.jpg", desc: "Traverse punishing environments, looting, crafting and evading the constant threats to your life.", tags: ["Challenge", "Fighting", "RPG"], tagline: "Challenge" },
+    { name: "WWE 2K24", key: "kj0458", img: "https://download-oss.raccoongame.com/uploads/image/20250331/20250331173717794.jpg", desc: "Experience a gripping retelling of WrestleMania's greatest moments.", tags: ["Sports", "Action", "Easy", "Fighting", "3A"], tagline: "3A" },
+    { name: "Buckshot Roulette", key: "kj0426", img: "https://download-oss.raccoongame.com/uploads/image/20240527/20240527171656277.jpg", desc: "Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves.", tags: ["Strategy", "Challenge"], tagline: "Strategy" },
+    { name: "Supermarket Simulator", key: "kp0203", img: "https://download-oss.raccoongame.com/uploads/image/20240527/2024052717080272.png", desc: "Run your own supermarket! Stock shelves, set your prices, take payments, hire staff.", tags: ["Strategy", "RPG"], tagline: "Strategy" },
+    { name: "The Long Drive", key: "kj0202", img: "https://download-oss.raccoongame.com/uploads/image/20240527/2024052717011280.jpg", desc: "Random generated open world semi-post apocalyptic survival car driving game.", tags: ["Easy", "Strategy", "Sports", "Challenge"], tagline: "Easy" },
+    { name: "GigaBash", key: "kj0237", img: "https://download-oss.raccoongame.com/uploads/image/20240527/20240527165429575.jpg", desc: "Control giant monsters and heroes with family and friends to battle to the fullest.", tags: ["Action", "RPG", "Fighting"], tagline: "Action" },
+    { name: "Zoonomaly", key: "kp0208", img: "https://download-oss.raccoongame.com/uploads/image/20240527/20240527163117749.png", desc: "You must survive a monster infested zoo while searching for key shards.", tags: ["Strategy", "Multiplayer", "Action"], tagline: "Strategy" },
+    { name: "Hades II", key: "kj0499", img: "https://download-oss.raccoongame.com/uploads/image/20240527/20240527161909639.jpg", desc: "Battle beyond the Underworld using dark sorcery to take on the Titan of Time.", tags: ["RPG", "Action"], tagline: "RPG" },
+    { name: "Brotato (Cloud)", key: "dg0380", img: "https://download-oss.raccoongame.com/uploads/image/20240520/2024052018070993.png", desc: "Brotato is a top-down arena shooting light ROGUE game.", tags: ["Easy"], tagline: "Easy" },
+    { name: "Wobbly Life", key: "kj0238", img: "https://download-oss.raccoongame.com/uploads/image/20240411/20240411183825744.jpg", desc: "Wobbly Life is a vibrant open-world physics sandbox.", tags: ["Multiplayer", "Easy", "Action", "Adventure"], tagline: "Multiplayer" },
+    { name: "Sniper: Ghost Warrior Contracts 2", key: "kp0133", img: "https://download-oss.raccoongame.com/uploads/image/20240223/20240223104219285.jpg", desc: "SGW Contracts 2 is a modern warfare shooter set in the Middle East.", tags: ["3A", "Shooting"], tagline: "3A" },
+    { name: "Tekken 8", key: "kj0440", img: "https://download-oss.raccoongame.com/uploads/image/20250402/20250402141624654.jpg", desc: "The latest entry in the legendary Tekken fighting series.", tags: ["Fighting", "Multiplayer", "Action", "3A"], tagline: "3A" },
+    { name: "Halo: The Master Chief Collection", key: "kj0229", img: "https://download-oss.raccoongame.com/uploads/image/20241217/20241217183311663.jpg", desc: "The classic heroic journey of the Master Chief spans across 6 games.", tags: ["Shooting", "Offline", "3A"], tagline: "3A" },
+    { name: "Alan Wake 2", key: "kj0357", img: "https://download-oss.raccoongame.com/uploads/image/20241108/20241108164656767.jpg", desc: "Can Saga Anderson and Alan Wake escape this terrifying predicament and become heroes?", tags: ["Adventure", "3A"], tagline: "3A" },
+    { name: "Neon Abyss", key: "dg0359", img: "https://download-oss.raccoongame.com/uploads/image/20250225/20250225111706535.jpg", desc: "Neon Abyss is a horizontal dungeon game that emphasizes the stacking effect of props.", tags: ["Challenge", "Easy", "Action", "Adventure"], tagline: "Challenge" },
+    { name: "Stick Fight: The Game", key: "kj0322", img: "https://download-oss.raccoongame.com/uploads/image/20230921/20230921170257932.jpg", desc: "Players will control a comical stickman and engage in chaos in various irregular fields.", tags: ["Multiplayer", "Online", "Fighting", "Puzzle", "Action"], tagline: "Multiplayer" },
+    { name: "Ratchet & Clank", key: "kj0287", img: "https://download-oss.raccoongame.com/uploads/image/20230831/20230831160505147.jpg", desc: "Play as Ratchet and Clank in an intergalactic adventure filled with explosive action and fun.", tags: ["Adventure", "3A", "Action"], tagline: "3A" },
+    { name: "The Last of Us Part I", key: "dg0315", img: "https://download-oss.raccoongame.com/uploads/image/20260408/20260408152339290.jpg", desc: "Joel is hired to smuggle 14-year-old Ellie out of a military quarantine zone.", tags: ["Adventure", "RPG", "Action", "3A"], tagline: "3A" },
+    { name: "Resident Evil 4", key: "kj0213", img: "https://download-oss.raccoongame.com/uploads/image/20260515/202605151629306.jpg", desc: "Leon S. Kennedy tracks the president's kidnapped daughter to a secluded European village.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Builder Simulator", key: "kj0135", img: "https://download-oss.raccoongame.com/uploads/image/20230518/20230518222345800.jpg", desc: "The House Building Simulator game is designed for those whose greatest dream has always been to build their own house.", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "Minecraft: Legends", key: "kj0191", img: "https://download-oss.raccoongame.com/uploads/image/20230504/20230504180952993.jpg", desc: "Discover the mysteries of Minecraft Legends, a new action strategy game.", tags: ["Adventure", "RPG", "3A"], tagline: "3A" },
+    { name: "Need for Speed: Payback", key: "kj0181", img: "https://download-oss.raccoongame.com/uploads/image/20230329/20230329174621974.jpg", desc: "Set in the underworld of Fortune Valley, you and your crew were divided by betrayal.", tags: ["Adventure", "Sports", "Racing", "3A"], tagline: "3A" },
+    { name: "SpongeBob SquarePants: Battle for Bikini Bottom", key: "kj0161", img: "https://download-oss.raccoongame.com/uploads/image/20230309/20230309154245933.jpg", desc: "The cult classic is back, faithfully remade in spongetastic splendor!", tags: ["Online", "Multiplayer", "Adventure", "Action"], tagline: "Online" },
+    { name: "Super Bunny Man", key: "kj0171", img: "https://download-oss.raccoongame.com/uploads/image/20230309/20230309143751602.jpg", desc: "A physics-based co-op platformer about a guy in a rabbit costume!", tags: ["Multiplayer", "Puzzle", "Online", "Easy", "Action"], tagline: "Multiplayer" },
+    { name: "Hogwarts Legacy", key: "kj0166", img: "https://download-oss.raccoongame.com/uploads/image/20250930/20250930145508266.jpg", desc: "Experience Hogwarts in the 1800s. Play as a student holding the key to an ancient secret.", tags: ["3A", "Adventure", "Offline"], tagline: "3A" },
+    { name: "SpongeBob SquarePants: The Cosmic Shake", key: "kj0150", img: "https://download-oss.raccoongame.com/uploads/image/20230208/20230208162229856.jpg", desc: "Wish-granting Mermaid's Tears in the hands of SpongeBob and Patrick… What could go wrong?", tags: ["RPG", "Adventure", "Action"], tagline: "RPG" },
+    { name: "Drift Racing Online", key: "kj0141", img: "https://download-oss.raccoongame.com/uploads/image/20230112/20230112141904622.jpg", desc: "CarX Drift Racing Online is your chance to immerse yourself in the real world of drifting.", tags: ["Sports", "Offline", "Racing"], tagline: "Sports" },
+    { name: "Choo-Choo Charles", key: "dg0278", img: "https://download-oss.raccoongame.com/uploads/image/20250402/20250402140901381.jpg", desc: "Drive a vintage train around an open-world island, continuously upgrading it.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Marvel's Spider-Man: Miles Morales", key: "kj0125", img: "https://download-oss.raccoongame.com/uploads/image/20251218/20251218002310690.jpg", desc: "Teenager Miles Morales is adjusting to his new home while following in the footsteps of his mentor.", tags: ["3A", "Adventure", "Action"], tagline: "3A" },
+    { name: "NBA 2K23", key: "kj0107", img: "https://download-oss.raccoongame.com/uploads/image/20230508/2023050818554376.jpeg", desc: "The NBA 2K23 has put the entire basketball world in your hands.", tags: ["Sports", "Offline", "Multiplayer"], tagline: "Sports" },
+    { name: "Ranch Simulator22", key: "kj0085", img: "https://download-oss.raccoongame.com/uploads/image/20220905/20220905122011868.webp", desc: "Create your farm and grow beautiful moments! Harvest crops, care for animals.", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "Marvel's Spider-Man Remastered", key: "kj0089", img: "https://download-oss.raccoongame.com/uploads/image/20250930/20250930114154630.jpg", desc: "The worlds of Peter Parker and Spider-Man collide in an original action-packed story.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Forza Horizon 5", key: "kj0214", img: "https://download-oss.raccoongame.com/uploads/image/20260305/20260305115627492.jpg", desc: "The game uses the Mexican map to expand the exciting carnival, offering more races and activities.", tags: ["Racing"], tagline: "Racing" },
+    { name: "Stray", key: "dg0183", img: "https://download-oss.raccoongame.com/uploads/image/20250613/20250613153035148.jpg", desc: "Stray is a third-person adventure game where you play as a stray cat navigating a decaying cybercity.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Pokémon Legends: Arceus", key: "kj0032", img: "https://download-oss.raccoongame.com/uploads/image/20260122/20260122010947516.png", desc: "Players will take on the role of a member of the Galaxy Team in the game.", tags: ["Adventure", "RPG"], tagline: "Adventure" },
+    { name: "Subnautica Zero", key: "kj0025", img: "https://download-oss.raccoongame.com/uploads/image/20220601/20220601160738157.png", desc: "The story of Subnautica: Below Zero takes place on an alien planet.", tags: ["Strategy", "Adventure"], tagline: "Strategy" },
+    { name: "GhostWire: Tokyo", key: "KJ0019", img: "https://download-oss.raccoongame.com/uploads/image/20250103/20250103180827822.jpg", desc: "Explore a Tokyo twisted by supernatural forces.", tags: ["Shooting", "3A", "Challenge", "Adventure", "Action"], tagline: "3A" },
+    { name: "THE KING OF FIGHTERS XV", key: "dg0174", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627181815843.png", desc: "SHATTER ALL EXPECTATIONS! Transcend beyond your limits with KOF XV!", tags: ["Fighting", "Multiplayer", "3A"], tagline: "3A" },
+    { name: "Hitman 3", key: "dg0168", img: "https://download-oss.raccoongame.com/uploads/image/20250815/2025081515231470.jpg", desc: "Death is around the corner. Agent 47 returns in HITMAN 3.", tags: ["Adventure", "3A", "Action"], tagline: "3A" },
+    { name: "Nintendo Star Brawl", key: "kj0332", img: "https://download-oss.raccoongame.com/uploads/image/20220308/20220308113443136.webp", desc: "The game features 103 stages. Each map can accommodate up to eight players in a brawl.", tags: ["Multiplayer", "Offline", "Fighting", "3A"], tagline: "3A" },
+    { name: "Red Dead Redemption 2", key: "jy0333", img: "https://download-oss.raccoongame.com/uploads/image/20260407/20260407165500251.jpg", desc: "The game tells the legendary story of Arthur Morgan and the notorious Van der Linde gang.", tags: ["3A", "Adventure", "RPG", "Shooting"], tagline: "3A" },
+    { name: "Elden Ring", key: "dg0170", img: "https://download-oss.raccoongame.com/uploads/image/20260515/2026051516303039.jpg", desc: "Step into vast scenes and explore unknown underground labyrinths.", tags: ["3A", "Adventure", "Challenge", "Action"], tagline: "3A" },
+    { name: "LEGO The Incredibles", key: "dg0163", img: "https://download-oss.raccoongame.com/uploads/image/20220218/20220218162726597.webp", desc: "Experience the thrilling adventures of the Parr family as they conquer crime and family life.", tags: ["Multiplayer", "RPG", "Action"], tagline: "Multiplayer" },
+    { name: "Watch Dogs: Legion", key: "dg0159", img: "https://download-oss.raccoongame.com/uploads/image/20250402/20250402141702762.jpg", desc: "In the game, your task is to build a resistance to fight against a tyrannical regime.", tags: ["3A", "Adventure", "Challenge", "Action"], tagline: "3A" },
+    { name: "God of War 4", key: "dg0154", img: "https://download-oss.raccoongame.com/uploads/image/20250402/20250402141418448.jpg", desc: "The days of Kratos' vengeance upon the Olympian gods are long past.", tags: ["3A", "Challenge", "Adventure", "Action"], tagline: "3A" },
+    { name: "Cooking Simulator", key: "dg0145", img: "https://download-oss.raccoongame.com/uploads/image/20220118/20118160905685.webp", desc: "Become the ultimate chef! Take control in a fully-equipped, beautifully decorated realistic kitchen!", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "FIFA19", key: "dg0139", img: "https://download-oss.raccoongame.com/uploads/image/20220106/20220106131728331.webp", desc: "In the game, both Career Mode and Ultimate Team allow you to play in the Champions League.", tags: ["Sports", "Multiplayer", "3A"], tagline: "3A" },
+    { name: "Grand Theft Auto: Vice City", key: "dg0129", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627144431471.jpg", desc: "Welcome to the 1980s. From the decade of big hair and pastel suits comes the story of one man's rise.", tags: ["3A", "Action", "Challenge", "RPG"], tagline: "3A" },
+    { name: "Grand Theft Auto: San Andreas", key: "dg0128", img: "https://download-oss.raccoongame.com/uploads/image/20260515/20260515162949699.jpg", desc: "It's the early '90s. After a couple of cops frame him for homicide, Carl 'CJ' Johnson is forced on a journey.", tags: ["3A", "Challenge", "RPG", "Action"], tagline: "3A" },
+    { name: "Grand Theft Auto III", key: "dg0127", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627191826951.png", desc: "It all starts in Liberty City. With revolutionary freedom to go anywhere and jack anyone.", tags: ["3A", "Action", "Challenge", "RPG"], tagline: "3A" },
+    { name: "The Legend of Zelda: Breath of the Wild", key: "jy0408", img: "https://download-oss.raccoongame.com/uploads/image/20211202/20211202161034296.webp", desc: "In ancient times, ancestors created four giant Divine Beasts.", tags: ["3A", "Action"], tagline: "3A" },
+    { name: "ARK: Survival Evolved", key: "dg0109", img: "https://download-oss.raccoongame.com/uploads/image/20211116/20211116093752503.webp", desc: "Stranded on the shores of a mysterious island, you must learn to survive.", tags: ["Adventure", "Offline", "RPG", "Action"], tagline: "Adventure" },
+    { name: "Cities: Skylines", key: "kj0185", img: "https://download-oss.raccoongame.com/uploads/image/20211109/20211109153159749.webp", desc: "Have Fun", tags: ["Strategy", "3A"], tagline: "3A" },
+    { name: "Arma 3", key: "dg0054", img: "https://download-oss.raccoongame.com/uploads/image/20211008/20211008154130946.webp", desc: "Experience true combat gameplay in a vast military sandbox.", tags: ["Strategy", "3A"], tagline: "3A" },
+    { name: "Assassin's Creed: Brotherhood", key: "dg0062", img: "https://download-oss.raccoongame.com/uploads/image/20250627/20250627144524899.jpg", desc: "Ezio, now a legendary Master Assassin, continues to survive against the powerful Templar Order.", tags: ["Adventure", "Challenge", "RPG", "Action", "3A"], tagline: "3A" },
+    { name: "Assassin's Creed: Revelations", key: "dg0063", img: "https://download-oss.raccoongame.com/uploads/image/20211008/20211008145828215.webp", desc: "Follows the legendary protagonist Ezio as he traces the steps of his predecessor, Altair.", tags: ["Challenge", "Adventure", "RPG", "3A"], tagline: "3A" },
+    { name: "Assassin's Creed: Black Flag", key: "dg0064", img: "https://download-oss.raccoongame.com/uploads/image/20230420/20230420211652688.jpg", desc: "The game narrates Edward's journey from participating in the privateering war to becoming involved in the Assassin Brotherhood.", tags: ["Adventure", "Challenge", "3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Assassin's Creed: Syndicate", key: "dg0065", img: "https://download-oss.raccoongame.com/uploads/image/20250402/2025040214122974.jpg", desc: "Assassin Jacob Frye, with the help of his twin sister Evie, changes the fate of many.", tags: ["Adventure", "3A", "RPG"], tagline: "3A" },
+    { name: "Football: PES 2021", key: "dg0024", img: "https://download-oss.raccoongame.com/uploads/image/20251218/20251218002137560.jpg", desc: "Added many new elements beyond the gaming experience.", tags: ["Sports", "Multiplayer", "Offline", "3A"], tagline: "3A" },
+    { name: "Mount & Blade II: Bannerlord", key: "kj0190", img: "https://download-oss.raccoongame.com/uploads/image/20241224/2024122416440565.jpg", desc: "Horns blared to the heavens, and flocks of crows darkened the sky.", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "Fling to Finish", key: "dg0022", img: "https://download-oss.raccoongame.com/uploads/image/20230322/20230322201636769.png", desc: "In Ultimate Pulling, two players are tied to the ends of a stretchable elastic rope.", tags: ["Multiplayer", "Puzzle", "Action", "Online"], tagline: "Multiplayer" },
+    { name: "A Way Out", key: "dg0021", img: "https://download-oss.raccoongame.com/uploads/image/20230322/20230322203032216.jpg", desc: "Only supports two-player gameplay. Each player needs to control one of the two protagonists.", tags: ["Multiplayer", "Adventure", "Offline", "Online", "3A"], tagline: "3A" },
+    { name: "Slime Rancher", key: "jy0559", img: "https://download-oss.raccoongame.com/uploads/image/20210909/20210909162030298.webp", desc: "This young and adventurous rancher begins her new life as a slime rancher.", tags: ["Strategy", "Easy", "RPG"], tagline: "Strategy" },
+    { name: "GTA V MOD version", key: "jy0532", img: "https://download-oss.raccoongame.com/uploads/image/20260122/20260122002957664.png", desc: "Mods Version! RB+LB Super hero mod; RB+X Get cars/weapon/characters mod.", tags: ["Challenge", "Adventure", "3A"], tagline: "3A" },
+    { name: "Alba: A Wildlife Adventure", key: "jy0362", img: "https://download-oss.raccoongame.com/uploads/image/20210827/20210827110503152.webp", desc: "Even the smallest person can make a big difference. Join Alba, as she sets out to save her beautiful island.", tags: ["Puzzle"], tagline: "Puzzle" },
+    { name: "Days Gone", key: "jy0487", img: "https://download-oss.raccoongame.com/uploads/image/20210826/20210826165254727.webp", desc: "Ride and fight into a deadly, post pandemic America.", tags: ["Adventure", "Challenge", "Action", "3A"], tagline: "3A" },
+    { name: "Assassin's Creed Odyssey: The Fate of Atlantis", key: "jy0238", img: "https://download-oss.raccoongame.com/uploads/image/20241217/20241217191626272.jpg", desc: "Embark on an adventure into the legendary realms of Greek mythology.", tags: ["3A", "RPG"], tagline: "3A" },
+    { name: "Euro Truck Simulator 2", key: "dg0020", img: "https://download-oss.raccoongame.com/uploads/image/20210819/20210819152350351.webp", desc: "Travel across Europe like a king of the road, delivering valuable cargo to distant destinations!", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "Forza Horizon 4", key: "jy0541", img: "https://download-oss.raccoongame.com/uploads/image/20210819/20210819150927774.webp", desc: "In the world's greatest automotive festival, ever-changing seasons change everything.", tags: ["3A", "Sports", "Racing"], tagline: "3A" },
+    { name: "Tokyo 2020 Olympics", key: "dg0017", img: "https://download-oss.raccoongame.com/uploads/image/20210804/20210804170038384.webp", desc: "The Olympic Games are back, and this is your great chance to win glory!", tags: ["Sports", "Multiplayer", "Online"], tagline: "Sports" },
+    { name: "SUPERHOT: Mind Control Delete", key: "jy0482", img: "https://download-oss.raccoongame.com/uploads/image/20210729/20210729161026790.webp", desc: "The long-awaited third game in the groundbreaking SUPERHOT franchise.", tags: ["Challenge"], tagline: "Challenge" },
+    { name: "Resident Evil Village", key: "kp0175", img: "https://download-oss.raccoongame.com/uploads/image/20260626/20260626144246541.jpg", desc: "Set a few years after the horrifying events in the critically acclaimed Resident Evil 7 biohazard.", tags: ["Challenge", "3A", "Action"], tagline: "3A" },
+    { name: "My Friend Pedro", key: "jy0473", img: "https://download-oss.raccoongame.com/uploads/image/20210715/20210715203828208.webp", desc: "My Friend Pedro is a blood-soaked ballet about friendship and imagination.", tags: ["Action"], tagline: "Action" },
+    { name: "Doom Eternal", key: "jy0488", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121175158608.png", desc: "Hell's armies have invaded Earth. Become the Slayer in an epic single-player campaign.", tags: ["Shooting", "3A"], tagline: "3A" },
+    { name: "Party Hard 2", key: "jy0470", img: "https://download-oss.raccoongame.com/uploads/image/20230824/20230824153232681.jpg", desc: "In Party Hard 2, use hundreds of methods to eliminate those annoying party-goers.", tags: ["Adventure", "Strategy", "Multiplayer", "Online"], tagline: "Adventure" },
+    { name: "The Amazing Spider-Man 2", key: "jy0186", img: "https://download-oss.raccoongame.com/uploads/image/20210701/20210701110046951.webp", desc: "Play as Spider-Man in an open-world adventure, using his extraordinary abilities.", tags: ["Adventure", "Action", "3A"], tagline: "3A" },
+    { name: "Transformers: Devastation", key: "jy0435", img: "https://download-oss.raccoongame.com/uploads/image/20210625/20210625155800236.webp", desc: "Play as the Autobots in a fast-paced action game to defeat the Decepticons and save the Earth.", tags: ["Fighting", "Action", "3A"], tagline: "3A" },
+    { name: "Control", key: "jy0417", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121174633373.png", desc: "A form of corruption has invaded the Federal Bureau of Control… Only you have the power to stop it.", tags: ["Challenge", "Adventure", "Action", "3A"], tagline: "3A" },
+    { name: "Halo: Reach", key: "jy0371", img: "https://download-oss.raccoongame.com/uploads/image/20260121/2026012117405271.png", desc: "In the game, players will once again experience the strength and noble spirit of the Spartan warriors.", tags: ["Challenge", "3A"], tagline: "3A" },
+    { name: "The Amazing Spider-Man", key: "jy0459", img: "https://download-oss.raccoongame.com/uploads/image/20250815/20250815155732187.jpg", desc: "Players will swing through a 3D representation of New York City.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Fallout 4", key: "jy0310", img: "https://download-oss.raccoongame.com/uploads/image/20210423/20210423120714547.webp", desc: "Fallout 4 is the fourth installment in the role-playing game series Fallout, developed by Bethesda.", tags: ["RPG", "3A"], tagline: "3A" },
+    { name: "It Takes Two", key: "jy0440", img: "https://download-oss.raccoongame.com/uploads/image/20230323/20230323122354541.png", desc: "Embark on the craziest journey of your life in It Takes Two, a genre-bending platform adventure.", tags: ["Adventure", "Online", "Multiplayer", "Offline", "3A"], tagline: "3A" },
+    { name: "Minecraft: Dungeons", key: "jy0402", img: "https://download-oss.raccoongame.com/uploads/image/20210402/20210402153932908.webp", desc: "Fight your way through an exciting action-adventure game, inspired by classic dungeon crawlers.", tags: ["Adventure", "Multiplayer", "Action", "Easy", "RPG", "3A"], tagline: "3A" },
+    { name: "Call of Duty: WWII", key: "jy0361", img: "https://download-oss.raccoongame.com/uploads/image/20260121/202601211709089.png", desc: "The campaign storyline of this game returns to the battlefields of World War II.", tags: ["Shooting", "3A"], tagline: "3A" },
+    { name: "Little Nightmares II", key: "jy0416", img: "https://download-oss.raccoongame.com/uploads/image/20210223/20210223113905296.webp", desc: "Return to a charmingly horrifying world with Little Nightmares II, a suspense-adventure game.", tags: ["Adventure", "Easy", "Action", "3A"], tagline: "3A" },
+    { name: "Hand of Fate 2", key: "jy0172", img: "https://download-oss.raccoongame.com/uploads/image/20210701/2021070115544498.webp", desc: "Hand of Fate 2 is a dungeon-crawling game set in a dark fantasy world.", tags: ["RPG"], tagline: "RPG" },
+    { name: "The Past Room", key: "jy0324", img: "https://download-oss.raccoongame.com/uploads/image/20210423/20210423111748763.webp", desc: "The Past Room is a hand-drawn point-and-click puzzle game.", tags: ["Puzzle", "Adventure"], tagline: "Puzzle" },
+    { name: "Little Nightmares", key: "jy0325", img: "https://download-oss.raccoongame.com/uploads/image/20250801/20250801170522640.jpg", desc: "Dive into the dark and unique tale of Little Nightmares and face your childhood fears!", tags: ["Adventure", "Action", "3A"], tagline: "3A" },
+    { name: "Mafia: Definitive Edition", key: "jy0307", img: "https://download-oss.raccoongame.com/uploads/image/20250613/20250613152910794.jpg", desc: "Begins its saga in 1930s Lost Heaven, Illinois. This meticulously remade classic immerses players in Prohibition-era America.", tags: ["3A", "Adventure", "RPG", "Action"], tagline: "3A" },
+    { name: "ONE PIECE: PIRATE WARRIORS 4", key: "jy0183", img: "https://download-oss.raccoongame.com/uploads/image/20210827/20210827103721165.webp", desc: "This work takes 'realistic ONE PIECE experience' as the core concept.", tags: ["Fighting", "3A", "Multiplayer", "Action"], tagline: "3A" },
+    { name: "Overcooked 2", key: "jy0281", img: "https://download-oss.raccoongame.com/uploads/image/20230508/20230508200039339.png", desc: "Overcooked returns with a brand-new helping of chaotic cooking action!", tags: ["Puzzle", "Multiplayer", "Offline", "Online", "Strategy", "Easy"], tagline: "Puzzle" },
+    { name: "Boomerang Fu", key: "jy0244", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121155951685.png", desc: "Slice and dice your friends with boomerangs in this frantic physics party game.", tags: ["Puzzle"], tagline: "Puzzle" },
+    { name: "Off-Road Heroes 4", key: "jy0112", img: "https://download-oss.raccoongame.com/images/games/cg0020044/b004_zunxiangtuijian_2.webp", desc: "Includes over 50 car models for players to drive, upgrade, and modify.", tags: ["Racing"], tagline: "Racing" },
+    { name: "Far Cry Primal", key: "jy0154", img: "https://download-oss.raccoongame.com/uploads/image/20211013/20211013103809191.webp", desc: "Players take on the role of Takkar, a nomadic hunter striving to rebuild his tribe.", tags: ["3A", "Adventure", "Shooting"], tagline: "3A" },
+    { name: "Mirror's Edge Catalyst", key: "dg0090", img: "https://download-oss.raccoongame.com/uploads/image/20210203/20210203172102804.webp", desc: "Follow the courageous free runner Faith as she fights for freedom in the city of Glass.", tags: ["Adventure", "Challenge", "Action"], tagline: "Adventure" },
+    { name: "Far Cry 3", key: "md0483", img: "https://download-oss.raccoongame.com/uploads/image/20211013/20211013104959287.webp", desc: "An open-world first-person shooter set on a unique island.", tags: ["Shooting"], tagline: "Shooting" },
+    { name: "COD6 Modern Warfare", key: "md0176", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020237/b004_remengyouxi.webp", desc: "In the high-definition remastered version of 'Call of Duty: Modern Warfare 2', you'll once again fight alongside familiar characters.", tags: ["3A", "Shooting"], tagline: "3A" },
+    { name: "Cyberpunk 2077", key: "jy0354", img: "https://download-oss.raccoongame.com/uploads/image/20260410/20260410170557349.jpg", desc: "Cyberpunk 2077 is an open world game set in Night City.", tags: ["3A", "Adventure", "Challenge", "RPG"], tagline: "3A" },
+    { name: "Batman: Arkham Origins", key: "jy0273", img: "https://download-oss.raccoongame.com/uploads/image/20260410/20260410165139465.jpg", desc: "The Single player campaign may still be played and enjoyed offline.", tags: ["3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Batman: Arkham Knight", key: "jy0272", img: "https://download-oss.raccoongame.com/uploads/image/20260408/20260408115021808.jpg", desc: "Brings the award-winning Arkham trilogy from Rocksteady Studios to its epic conclusion.", tags: ["3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Far Cry New Dawn", key: "jy0252", img: "https://download-oss.raccoongame.com/uploads/image/20250801/20250801170502249.jpg", desc: "Dive into a transformed vibrant post-apocalyptic Hope County, Montana, 17 years after a global nuclear catastrophe.", tags: ["3A", "Shooting", "Challenge"], tagline: "3A" },
+    { name: "Tom Clancy's Ghost Recon Wildlands", key: "jy0214", img: "https://download-oss.raccoongame.com/uploads/image/20251110/20251110142109170.png", desc: "Create a team with up to 3 friends to experience the ultimate military shooter.", tags: ["3A", "Shooting", "RPG"], tagline: "3A" },
+    { name: "Resident Evil: Revelations 2", key: "jy0235", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020147/a004_img_recommend_1.webp", desc: "The story of this game takes place between Resident Evil 5 and Resident Evil 6.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Stardew Valley", key: "jy0229", img: "https://download-oss.raccoongame.com/uploads/image/20260407/20260407173529946.jpg", desc: "You've inherited your grandfather's old farm plot in Stardew Valley.", tags: ["Strategy", "RPG", "Simulation"], tagline: "Strategy" },
+    { name: "Sekiro: Shadows Die Twice", key: "jy0038", img: "https://download-oss.raccoongame.com/uploads/image/20230322/20230322195617171.jpg", desc: "In Sekiro: Shadows Die Twice, take Revenge. Restore your honor. Kill Ingeniously.", tags: ["3A", "Challenge", "RPG", "Adventure", "Action"], tagline: "3A" },
+    { name: "Attack On Titan 2", key: "jy0208", img: "https://download-oss.raccoongame.com/uploads/image/20250815/20250815161718587.jpg", desc: "Experience the immense story and action of Attack on Titan!", tags: ["3A", "Challenge", "Action"], tagline: "3A" },
+    { name: "Curse of the Dead Gods", key: "jy0219", img: "https://download-oss.raccoongame.com/uploads/image/20220428/20220428154836446.png", desc: "You seek countless riches, eternal life, and divine power—all pointing to this cursed temple.", tags: ["Challenge", "Adventure", "Action"], tagline: "Challenge" },
+    { name: "Bloodstained: Ritual of the Night", key: "jy0080", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121153136443.png", desc: "An exploration-focused, side-scroller action RPG by Koji Igarashi.", tags: ["RPG", "Action"], tagline: "RPG" },
+    { name: "Forager", key: "jy0196", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121151347543.png", desc: "The highly popular and quirky 'idle game that you want to actively keep playing'.", tags: ["Puzzle", "Adventure", "Strategy"], tagline: "Puzzle" },
+    { name: "Resident Evil 7: Biohazard", key: "jy0095", img: "https://download-oss.raccoongame.com/uploads/image/20250815/20250815172959772.jpg", desc: "The game is set in an abandoned farmhouse in the southern United States.", tags: ["3A", "Challenge"], tagline: "3A" },
+    { name: "Titanfall 2", key: "jy0185", img: "https://download-oss.raccoongame.com/uploads/image/20210910/20210910111018307.webp", desc: "A sci-fi first-person shooter game. The game introduces a brand-new single-player campaign.", tags: ["3A", "Shooting"], tagline: "3A" },
+    { name: "Watch Dogs 2", key: "jy0147", img: "https://download-oss.raccoongame.com/uploads/image/20260416/20260416114647944.jpg", desc: "Players take on the role of the young and intelligent hacker Marcus Holloway.", tags: ["3A", "Adventure", "Action"], tagline: "3A" },
+    { name: "Cuphead", key: "jy0146", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121145749473.png", desc: "A retro side scrolling game in the 1930s cartoon style.", tags: ["Challenge", "Multiplayer", "Online", "Action", "Adventure"], tagline: "Challenge" },
+    { name: "What Remains of Edith Finch", key: "jy0157", img: "https://download-oss.raccoongame.com/uploads/image/20230608/20230608153228735.jpg", desc: "Tells the story of a cursed family in Washington State.", tags: ["Adventure"], tagline: "Adventure" },
+    { name: "Untitled Goose Game", key: "jy0124", img: "https://download-oss.raccoongame.com/uploads/image/20250225/20250225112426902.png", desc: "A farm themed comedy game. The game begins in a quiet and peaceful village.", tags: ["Strategy", "Puzzle", "Multiplayer", "Online", "Easy"], tagline: "Strategy" },
+    { name: "Rise of the Tomb Raider", key: "jy0121", img: "https://download-oss.raccoongame.com/uploads/image/20250815/20250815162338597.jpg", desc: "Rise of the Tomb Raider: 20 Year Celebration includes the base game and Season Pass.", tags: ["Adventure", "3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Katana ZERO", key: "jy0120", img: "https://download-oss.raccoongame.com/uploads/image/20230907/20230907123321261.jpg", desc: "An indie game developed by Askiisoft. The game features fast-paced, stylish combat.", tags: ["Challenge"], tagline: "Challenge" },
+    { name: "Wizard of Legend", key: "jy0122", img: "https://download-oss.raccoongame.com/uploads/image/20260121/2026012114475233.png", desc: "A Roguelike action game focused on fast-paced spellcasting combat.", tags: ["Challenge", "Multiplayer", "Action"], tagline: "Challenge" },
+    { name: "One Piece: Burning Blood", key: "jy0059", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020055/a004_img_recommend_1.webp", desc: "Online Play: The online interface is unlocked after completing the sixth level.", tags: ["Fighting", "Offline"], tagline: "Fighting" },
+    { name: "Ori and the Will of the Wisps", key: "jy0126", img: "https://download-oss.raccoongame.com/uploads/image/20210402/20210402165758426.webp", desc: "A Metroidvania-style platform adventure game developed by Moon Studios.", tags: ["Challenge", "Action"], tagline: "Challenge" },
+    { name: "Doraemon: Story of Seasons", key: "jy0118", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020074/a004_img_recommend_1.webp", desc: "Play as Doraemon and build a farm in this crossover game.", tags: ["Strategy"], tagline: "Strategy" },
+    { name: "Hades", key: "jy0123", img: "https://download-oss.raccoongame.com/uploads/image/20260121/20260121144523682.png", desc: "Defy the god of the dead as you hack and slash out of the Underworld.", tags: ["Challenge", "Easy", "Action"], tagline: "Challenge" },
+    { name: "Ace Combat 7: Skies Unknown", key: "jy0109", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020070/a004_img_recommend_1.webp", desc: "A first-person flight shooting game developed by Bandai.", tags: ["3A", "Strategy", "Shooting", "Sports"], tagline: "3A" },
+    { name: "Witchers 3", key: "jy0091", img: "https://download-oss.raccoongame.com/uploads/image/20230322/20230322194948461.jpg", desc: "You are Geralt of Rivia, mercenary monster slayer.", tags: ["3A", "RPG", "Action"], tagline: "3A" },
+    { name: "Terminator: Resistance", key: "jy0105", img: "https://download-oss.raccoongame.com/uploads/image/20210428/20210428162111388.webp", desc: "The game is set 30 years after Judgment Day in a ravaged future Los Angeles.", tags: ["Shooting", "3A"], tagline: "3A" },
+    { name: "NieR: Automata", key: "jy0103", img: "https://download-oss.raccoongame.com/uploads/image/20250613/2025061315324568.jpg", desc: "Tells the story of androids 2B, 9S and A2 and their battle to reclaim the machine-driven dystopia.", tags: ["Challenge", "Fighting", "RPG", "Action", "3A"], tagline: "3A" },
+    { name: "Ori and the Blind Forest", key: "jy0094", img: "https://download-oss.raccoongame.com/uploads/image/20210402/20210402165122253.webp", desc: "A side-scrolling adventure game developed by the independent studio Moon Studios.", tags: ["Challenge", "Action", "3A"], tagline: "3A" },
+    { name: "Dragon Ball Z: Kakarot", key: "jy0084", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020050/a004_img_recommend_1.webp", desc: "Experience the story of Goku and other Z warriors!", tags: ["3A", "Fighting", "Action", "RPG"], tagline: "3A" },
+    { name: "For The King", key: "jy0075", img: "https://download-oss.raccoongame.com/uploads/image/20210701/2021070111403285.webp", desc: "A strategic RPG game that combines elements of board games and roguelike genres.", tags: ["Strategy", "Multiplayer", "RPG"], tagline: "Strategy" },
+    { name: "Assassin's Creed: Odyssey", key: "jy0046", img: "https://download-oss.raccoongame.com/uploads/image/20241119/20241119150446640.jpg", desc: "Write your own legendary odyssey and live epic adventures in a world where every choice matters.", tags: ["3A", "RPG"], tagline: "3A" },
+    { name: "Resident Evil 2: Remake", key: "jy0040", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020017/a004_img_recommend_1.webp", desc: "The genre-defining masterpiece Resident Evil 2 returns, completely rebuilt from the ground up.", tags: ["3A", "Action", "Adventure"], tagline: "3A" },
+    { name: "Devil May Cry 5", key: "jy0039", img: "https://download-oss.raccoongame.com/uploads/image/20250815/20250815173456114.jpg", desc: "The strongest demon hunter makes a powerful return!", tags: ["3A", "Challenge", "Adventure"], tagline: "3A" },
+    { name: "FINAL FANTASY VII REMAKE INTERGRADE", key: "dg0158", img: "https://download-oss.raccoongame.com/uploads/image/20260429/20260429155011461.jpg", desc: "Meticulously crafted by the core team behind the original 1997 release.", tags: ["RPG", "3A", "Action"], tagline: "3A" },
+    { name: "How to Train Your Dragon: Dawn of New Riders", key: "jy0015", img: "https://download-oss.raccoongame.com/images/cloudgame/img/phone300_public/gamedetails/cg0020008/a004_img_recommend_1.webp", desc: "Players control new characters and team up with familiar faces like Hiccup.", tags: ["Challenge", "Adventure", "Action"], tagline: "Challenge" },
+    { name: "American Fugitive", key: "jy0012", img: "https://download-oss.raccoongame.com/uploads/image/20260429/20260429153423938.jpg", desc: "The game is set in the Deep South of the United States in the 1980s.", tags: ["Adventure", "Action"], tagline: "Adventure" },
+    { name: "Naruto Shippuden: Ultimate Ninja Storm 4", key: "jy0009", img: "https://download-oss.raccoongame.com/uploads/image/20260429/20260429151802428.jpg", desc: "This game tells the story of the final chapter of the Naruto manga.", tags: ["Multiplayer", "3A", "Fighting"], tagline: "3A" },
+    { name: "Baldur's Gate 3", key: "kj0283", img: "https://download-oss.raccoongame.com/uploads/image/20260410/20260410173748437.jpg", desc: "A highly acclaimed turn - based computer role - playing game.", tags: ["Challenge", "RPG", "Strategy", "Adventure"], tagline: "Challenge" },
+    { name: "Devil May Cry 4", key: "jy0008", img: "https://download-oss.raccoongame.com/uploads/image/20251217/20251217171617570.png", desc: "An action game developed and published by Capcom.", tags: ["3A", "Adventure", "Action", "Challenge"], tagline: "3A" },
+    { name: "Dead Cells", key: "jy0013", img: "https://download-oss.raccoongame.com/uploads/image/20251218/20251218002204661.jpg", desc: "A critically acclaimed rogue-lite, metroidvania-inspired action-platformer developed by Motion Twin.", tags: ["Challenge", "Easy", "Action", "Adventure"], tagline: "Challenge" },
+    { name: "PES 2017", key: "jy0017", img: "https://download-oss.raccoongame.com/uploads/image/20251217/20251217163308236.png", desc: "Pro Evolution Soccer 2017 will be developed using the FOX engine.", tags: ["Sports", "3A", "Multiplayer"], tagline: "3A" },
+    { name: "Final Fantasy XIII", key: "jy0005", img: "https://download-oss.raccoongame.com/uploads/image/20251217/20251217161425729.png", desc: "Set on the primordial land of 'Pulse', Final Fantasy XIII tells the story of the 'L'Cie'.", tags: ["3A", "RPG"], tagline: "3A" },
+    { name: "Transformers: Rise of the Dark Spark", key: "jy0018", img: "https://download-oss.raccoongame.com/uploads/image/20251217/20251217152321412.png", desc: "The sequel to Activision's first two Transformers games, War for Cybertron and Fall of Cybertron.", tags: ["Shooting", "Action"], tagline: "Shooting" },
+    { name: "Hollow Knight", key: "jy0011", img: "https://download-oss.raccoongame.com/uploads/image/20250331/20250331165157210.jpg", desc: "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom.", tags: ["Challenge", "Easy", "Action"], tagline: "Challenge" }
+  ];
+
+  let activeUuid = null;
+  let pingInterval = null;
+  let queuePollTimer = null;
+  let queueFails = 0;
+  let abortCtrl = null;
+
+  function apiKey() {
+    let input = document.getElementById('apiKeyInput');
+    let key = input ? input.value.trim() : "";
+    
+    if (!key) {
+      key = prompt("Enter your Cloud Gaming API Key to launch:");
+      if (input && key) {
+        input.value = key; 
+      }
+    }
+    return key;
+  }
+
+  function setupOverlay() {
+    let overlay = document.getElementById('nicheOverlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'nicheOverlay';
+      overlay.className = 'fixed inset-0 bg-black hidden flex-col items-center justify-center z-50';
+      overlay.innerHTML = `
+        <div id="nicheLoading" class="flex flex-col items-center text-white gap-4 absolute">
+          <div class="w-10 h-10 border-4 border-gray-600 border-t-white rounded-full animate-spin"></div>
+          <div id="nicheLoadingText" class="text-xl font-bold">Loading…</div>
+          <div id="nicheStatusSub" class="text-sm text-gray-400"></div>
+        </div>
+        <iframe id="nicheGameFrame" class="w-full h-full hidden bg-black" allow="fullscreen; gamepad; autoplay; pointer-lock" allowfullscreen referrerpolicy="no-referrer"></iframe>
+        <button id="nicheCloseBtn" class="absolute top-4 right-4 bg-black-600 text-white px-4 py-2 rounded-lg hover:bg-black-700 font-bold">X</button>
+      `;
+      document.body.appendChild(overlay);
+      
+      document.getElementById('nicheCloseBtn').onclick = async () => {
+        if (activeUuid) {
+          try {
+            await apiFetch(`/cloud/v1/quitSession`, {
+              method: "POST",
+              headers: { "x-api-key": apiKey(), "Content-Type": "application/json" },
+              body: JSON.stringify({ uuid: activeUuid }),
+            });
+          } catch { }
+        }
+        try {
+          if (window.nicheLastWasSynapse) {
+            window.nicheLastWasSynapse = false;
+            const df = document.getElementById('synDriver');
+            if (df) df.src = '/synapse/index.html';
+          }
+        } catch (e) {}
+        resetState();
+        overlay.style.display = 'none';
+        document.getElementById('nicheGameFrame').src = "";
+        document.body.style.overflow = "";
+      };
+      overlay.addEventListener('click', (ev) => {
+        try {
+          const t = ev.target;
+          if (t && (t.id === 'nicheCloseBtn' || (t.closest && t.closest('#nicheCloseBtn')))) return;
+          focusGame();
+        } catch (e) {}
+      });
+    }
+    return overlay;
+  }
+
+  function setStatus(main, sub="") {
+    const txt = document.getElementById('nicheLoadingText');
+    const subTxt = document.getElementById('nicheStatusSub');
+    if(txt) txt.textContent = main;
+    if(subTxt) subTxt.textContent = sub;
+  }
+
+  function openOverlay(label) {
+    setupOverlay();
+    const overlay = document.getElementById('nicheOverlay');
+    overlay.style.display = 'flex';
+    document.getElementById('nicheLoading').style.display = 'flex';
+    document.getElementById('nicheGameFrame').style.display = 'none';
+    document.body.style.overflow = 'hidden';
+    setStatus(`Loading ${label}…`);
+  }
+
+  function releaseWake() {
+    try { if (window.nicheWake) { window.nicheWake.release().catch(() => {}); window.nicheWake = null; } } catch (e) {}
+  }
+  async function holdWake() {
+    try {
+      if (!('wakeLock' in navigator)) return;
+      if (window.nicheWake) return;
+      window.nicheWake = await navigator.wakeLock.request('screen');
+      try {
+        window.nicheWake.addEventListener('release', () => { window.nicheWake = null; });
+      } catch (e) {}
+    } catch (e2) {}
+  }
+  function focusGame() {
+    try {
+      const frame = document.getElementById('nicheGameFrame');
+      if (!frame || frame.style.display === 'none') return;
+      try { frame.focus(); } catch (e) {}
+      try { if (frame.contentWindow) frame.contentWindow.focus(); } catch (e2) {}
+    } catch (e3) {}
+  }
+  function resetState() {
+    releaseWake();
+    clearInterval(pingInterval);
+    clearTimeout(queuePollTimer);
+    pingInterval = null; queuePollTimer = null; queueFails = 0;
+    if (abortCtrl) { abortCtrl.abort(); abortCtrl = null; }
+    activeUuid = null;
+  }
+
+  async function launch(game) {
+    window.nicheLastWasSynapse = false;
+    resetState();
+    openOverlay(game.name);
+    abortCtrl = new AbortController();
+    launchLog('launch', game, 'key: ' + game.key);
+
+    if (LOCAL_GAMES[game.key]) {
+      setTimeout(() => {
+        document.getElementById('nicheLoading').style.display = 'none';
+        document.getElementById('nicheGameFrame').style.display = 'block';
+        document.getElementById('nicheGameFrame').src = LOCAL_GAMES[game.key];
+        launchLog('loaded', game, 'local: ' + LOCAL_GAMES[game.key]);
+      }, 1200);
+      return;
+    }
+
+    setStatus(`Launching ${game.name}…`);
+    let res;
+    try {
+      res = await apiFetch(`/cloud/v1/createSession`, {
+        method: "POST",
+        headers: { "x-api-key": apiKey(), "Content-Type": "application/json" },
+        body: JSON.stringify({ game_key: game.key }),
+        signal: abortCtrl.signal,
+      });
+    } catch (e) {
+      setStatus("Failed to reach API.", String(e));
+      launchLog('error', game, 'createSession unreachable: ' + String(e && e.message || e));
+      return;
+    }
+
+    if (!res.ok || !res.body) {
+      const txt = await res.text().catch(() => "");
+      setStatus("createSession failed.", txt || `HTTP ${res.status}`);
+      launchLog('error', game, 'createSession failed: ' + (txt || ('HTTP ' + res.status)));
+      return;
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = "";
+    let settled = false;
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      let idx;
+      while ((idx = buf.indexOf("\n")) >= 0) {
+        const line = buf.slice(0, idx).trim();
+        buf = buf.slice(idx + 1);
+        if (!line) continue;
+        let msg;
+        try { msg = JSON.parse(line); } catch { continue; }
+        await handleStreamMsg(msg, game);
+        if (msg.status === "error" || msg.status === "finished_queue") { settled = true; return; }
+      }
+    }
+    if (!settled) setStatus("Stream ended before slot ready.", "Tap the game again to retry.");
+  }
+
+  async function handleStreamMsg(msg, game) {
+    switch (msg.status) {
+      case "creating_account": setStatus("Creating account…", "Just a few seconds."); break;
+      case "account_ready": setStatus("Account ready.", "Requesting game session…"); break;
+      case "requesting_game": setStatus("Requesting game slot…"); break;
+      case "queue":
+        activeUuid = msg.uuid;
+        setStatus(`In queue for ${game.name}`, `Position ${msg.queue_pos ?? "?"}`);
+        pollQueue(game);
+        break;
+      case "finished_queue":
+        activeUuid = msg.uuid || activeUuid;
+        setStatus("Slot ready — starting game…");
+        await startGame(game);
+        break;
+      case "error":
+        setStatus("Error.", msg.error || "Unknown error.");
+        launchLog('error', game, 'stream: ' + (msg.error || 'Unknown error.'));
+        break;
+    }
+  }
+
+  function queueDead(game, why) {    resetState();
+    setStatus("Queue lost.", (why || "Session expired.") + " Tap the game again to retry.");
+  }
+  async function pollQueue(game) {
+    if (!activeUuid) return;
+    try {
+      const res = await apiFetch(`/cloud/v1/getQueue?uuid=${activeUuid}`, { headers: { "x-api-key": apiKey() }, cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      queueFails = 0;
+      if (data.status === "queue") {
+        setStatus(`In queue for ${game.name}`, `Position ${data.queue_pos ?? "?"}`);
+        queuePollTimer = setTimeout(() => pollQueue(game), (typeof data.queue_pos === "number" && data.queue_pos > 10) ? 20000 : 8000);
+      } else if (data.status === "finished_queue") {
+        setStatus("Slot ready — starting game…");
+        await startGame(game);
+      } else {
+        queueDead(game, "Session is gone.");
+      }
+    } catch (e) {
+      queueFails++;
+      if (queueFails >= 8) { queueDead(game, "Could not reach queue."); return; }
+      setStatus("Queue poll failed, retrying…", String(e));
+      queuePollTimer = setTimeout(() => pollQueue(game), 12000);
+    }
+  }
+
+  async function startGame(game) {
+    if (!activeUuid) return;
+    let res, data;
+    try {
+      res = await apiFetch(`/cloud/v1/startGame`, {
+        method: "POST",
+        headers: { "x-api-key": apiKey(), "Content-Type": "application/json" },
+        body: JSON.stringify({ uuid: activeUuid }),
+      });
+      data = await res.json();
+    } catch (e) {
+      setStatus("startGame failed.", String(e));
+      launchLog('error', game, 'startGame failed: ' + String(e && e.message || e));
+      return;
+    }
+
+    if (!res.ok) {
+      setStatus("startGame rejected.", data.error || `HTTP ${res.status}`);
+      launchLog('error', game, 'startGame rejected: ' + (data.error || ('HTTP ' + res.status)));
+      return;
+    }
+
+    setStatus("Connecting…");
+    const frame = document.getElementById('nicheGameFrame');
+    frame.src = `${apiBase || ""}/cloud/v1/embed?id=${encodeURIComponent(activeUuid)}&host=${encodeURIComponent(location.host)}`;
+    frame.onload = () => {
+      document.getElementById('nicheLoading').style.display = 'none';
+      frame.style.display = 'block';
+      holdWake();
+      focusGame();
+      setStatus("Live", "Streaming — click inside to capture keyboard/mouse.");
+      launchLog('loaded', game, 'uuid: ' + activeUuid);
+    };
+
+    pingInterval = setInterval(async () => {
+      try {
+        await apiFetch(`/cloud/v1/pingSession`, {
+          method: "POST",
+          headers: { "x-api-key": apiKey(), "Content-Type": "application/json" },
+          body: JSON.stringify({ uuid: activeUuid }),
+        });
+      } catch { }
+    }, 15000);
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    try {
+      if (!document.hidden && document.getElementById('nicheGameFrame') && document.getElementById('nicheGameFrame').style.display === 'block') holdWake();
+    } catch (e) {}
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    setupOverlay();
+    
+    const nav = document.querySelector('.mt-2.h-15') || document.querySelector('.flex.items-center.justify-center.gap-2');
+    if (nav && !document.getElementById('apiKeyInput')) {
+      const input = document.createElement('input');
+      input.id = 'apiKeyInput';
+      input.type = 'text';
+      input.placeholder = 'API Key';
+      input.className = 'bg-blue-500 text-white px-2 py-1 rounded-lg border border-blue-200 w-40 text-xs outline-none';
+      nav.appendChild(input);
+    }
+
+    const container = document.getElementById('gameGrid') || document.querySelector('.h-\\[765px\\]') || document.querySelector('.mx-auto.w-\\[99\\%\\]');
+    function updateGameCount() {
+      try {
+        const gsi = document.getElementById('gameSearch');
+        if (gsi) gsi.placeholder = 'Search ' + (GAMES.length + synapseGames().length) + ' cloud titles';
+      } catch (e) {}
+    }
+    function synapseGames() {
+      try {
+        const f = document.getElementById('synDriver');
+        const w = f && f.contentWindow;
+        const list = (w && w.App && w.App.rawGames) || [];
+        return list.filter(g => g && (g.title || g.id)).map(g => ({
+          name: g.title || g.id, img: g.icon, key: 'syn:' + g.id, src: 'synapse',
+          pkg: g.id, status: g.status || 1, tags: (g.categories || []).concat(['synapse']), tagline: ((g.categories || [])[0] || '')
+        }));
+      } catch (e) { return []; }
+    }
+    function mixGames(a, b) {
+      const out = [];
+      const n = Math.max(a.length, b.length);
+      for (let i = 0; i < n; i++) {
+        if (i < a.length) out.push(a[i]);
+        if (i < b.length) out.push(b[i]);
+      }
+      return out;
+    }
+    if (!document.getElementById('synDriver')) {
+      const df = document.createElement('iframe');
+      df.id = 'synDriver';
+      df.setAttribute('aria-hidden', 'true');
+      df.style.cssText = 'position:absolute;width:2px;height:2px;opacity:0;pointer-events:none;border:0;';
+      df.src = '/synapse/index.html';
+      document.body.appendChild(df);
+    }
+    let synRendered = 0;
+    setInterval(() => {
+      try {
+        const f = document.getElementById('synDriver');
+        const w = f && f.contentWindow;
+        const n = (w && w.App && w.App.rawGames && w.App.rawGames.length) || 0;
+        if (n && n !== synRendered) {
+          synRendered = n;
+          const gsi = document.getElementById('gameSearch');
+          renderGames(gsi ? gsi.value : '');
+        }
+      } catch (e) {}
+    }, 2000);
+    async function synapsePlay(game, retried) {
+      resetState();
+      openOverlay(game.name);
+      setStatus('Connecting to Synapse…', game.name);
+      let w = null;
+      try {
+        const f = document.getElementById('synDriver');
+        w = (f && f.contentWindow && f.contentWindow.App) ? f.contentWindow : null;
+      } catch (e) { w = null; }
+      if (!w) { setStatus('Synapse still loading…', 'Wait a moment and tap the game again'); return; }
+      try {
+        if (!w.App || typeof w.App.handlePlay !== 'function') {
+        if (!retried) { setStatus('Synapse still loading…', 'Warming up, retrying…'); setTimeout(() => { try { synapsePlay(game, true); } catch (e) {} }, 3000); return; }
+        setStatus('Synapse still loading…', 'Wait a moment and tap the game again'); return;
+      }
+        try {
+          const hd = w.document;
+          const need = ['play-btn-el', 'queue-modal', 'queue-pos', 'queue-time'];
+          for (const nid of need) {
+            if (hd && !hd.getElementById(nid)) {
+              const el = hd.createElement(nid.indexOf('queue-') === 0 ? 'span' : 'button');
+              el.id = nid;
+              el.style.display = 'none';
+              (hd.body || hd.documentElement).appendChild(el);
+            }
+          }
+        } catch (e0) {}
+        try {
+          w.App.launchGameAction = function (sid) {
+            try { w.__synSid = sid; } catch (e7) {}
+            try { localStorage.setItem('cm_launch_data', JSON.stringify({ sid: sid, quality: 'SD', timestamp: Date.now() })); } catch (e8) {}
+          };
+        } catch (e9) {}
+        await w.App.handlePlay(game.pkg, game.status || 1);
+      } catch (e) { setStatus('Synapse error', String((e && e.message) || e)); return; }
+      const t0 = Date.now();
+      const timer = setInterval(() => {
+        try {
+          let ww = null;
+          try {
+            const f = document.getElementById('synDriver');
+            ww = (f && f.contentWindow && f.contentWindow.App) ? f.contentWindow : null;
+          } catch (e) { ww = null; }
+          if (!ww) { clearInterval(timer); return; }
+          let sid = null;
+          try { sid = ww.__synSid || null; } catch (e2) {}
+          if (sid) {
+            clearInterval(timer);
+            try { ww.__synSid = null; } catch (e2b) {}
+            const frame = document.getElementById('nicheGameFrame');
+            try { frame.setAttribute('allow', 'fullscreen; gamepad; autoplay; pointer-lock; microphone; clipboard-write; clipboard-read'); } catch (e3) {}
+            document.getElementById('nicheLoading').style.display = 'none';
+            frame.style.display = 'block';
+            frame.src = '/synapse/play-260430.html';
+            frame.onload = () => { try { focusGame(); } catch (e) {} };
+            try { setTimeout(focusGame, 500); } catch (e) {}
+            document.body.style.overflow = 'hidden';
+            window.nicheLastWasSynapse = true;
+            setTimeout(() => { try { const df = document.getElementById('synDriver'); if (df) df.src = '/synapse/index.html'; } catch (e) {} }, 1500);
+            try { launchLog('launch', { name: game.name, key: game.key }, 'synapse cloud'); } catch (e4) {}
+            return;
+          }
+          if (Date.now() - t0 > 180000) { clearInterval(timer); setStatus('Synapse timed out', 'Tap the game to retry'); return; }
+          try {
+            const qd = ww.document;
+            const qp = qd && qd.getElementById('queue-pos');
+            const qt = qd && qd.getElementById('queue-time');
+            if (qp && qp.textContent && qp.textContent.trim() && qp.textContent.trim() !== '--') {
+              setStatus('Synapse queue — position ' + qp.textContent.trim(), 'Est. ' + ((qt && qt.textContent.trim()) || '…'));
+            }
+          } catch (e5) {}
+        } catch (e6) { clearInterval(timer); }
+      }, 1000);
+    }
+    window.renderGames = function(filter) {
+      if (!container) return;
+      container.style.flexWrap = "wrap";
+      container.style.overflowY = "auto";
+      container.style.alignContent = "flex-start";
+      container.innerHTML = '';
+
+      const q = (filter || '').trim().toLowerCase();
+      let shown = 0;
+      mixGames(GAMES, synapseGames()).forEach(game => {
+        if (q) {
+          const hay = (game.name + ' ' + (game.tags || []).join(' ') + ' ' + (game.tagline || '')).toLowerCase();
+          if (!hay.includes(q)) return;
+        }
+        const card = document.createElement('div');
+        card.className = 'bg-blue-400 p-2 rounded-xl w-50 h-62 flex flex-col items-center justify-start cursor-pointer hover:bg-blue-500 transition-all m-1 relative';
+        card.innerHTML = `
+          <img src="${game.img}" class="w-full h-34 object-cover rounded-md" alt="${game.name}">
+          <h3 class="text-white text-xs font-bold text-center mt-2">${game.name}</h3>
+          <p class="text-blue-100 text-[14px] text-center mt-1">${game.tagline || ''}</p>
+        `;
+        card.addEventListener('click', () => { if (game.src === 'synapse') synapsePlay(game); else launch(game); });
+        container.appendChild(card);
+        shown++;
+      });
+      if (!shown) container.innerHTML = '<div class="text-white p-4">No games match.</div>';
+      try { updateGameCount(); } catch (e) {}
+    };
+    renderGames('');
+    const gsi = document.getElementById('gameSearch');
+    if (gsi) gsi.addEventListener('input', () => renderGames(gsi.value));
+  });
+
+})();
+</script>
+
+<script>
+/* onefile shell controller (forked from lapis.js, iframe-free) */
+var mainFrame = { addEventListener: function () {}, classList: { add: function () {}, remove: function () {}, contains: function () { return false; } } };
+var clickSound = (typeof window.nicheClick === 'function') ? window.nicheClick : function () {}; try { window.nicheClick = clickSound; } catch (e) {}
+var oneLoader = document.getElementById('page-loader');
+var oneLoaderTimer = null, oneTextTimer = null, oneSafe = null;
+function showLoader() {
+  if (!oneLoader) return;
+  clearTimeout(oneLoaderTimer); clearTimeout(oneTextTimer); clearTimeout(oneSafe);
+  var spinner = oneLoader.querySelector('.spin-n');
+  if (spinner) { spinner.style.animation = 'none'; void spinner.offsetWidth; spinner.style.animation = ''; }
+  oneLoader.classList.remove('swipe-out'); oneLoader.style.display = 'flex';
+  oneTextTimer = setTimeout(function () { var t = document.getElementById('loader-text'); if (t) t.style.display = 'block'; }, 3000);
+  oneSafe = setTimeout(hideLoader, 15000);
+}
+function hideLoader() {
+  if (!oneLoader) return;
+  clearTimeout(oneLoaderTimer); clearTimeout(oneTextTimer); clearTimeout(oneSafe);
+  var t = document.getElementById('loader-text'); if (t) t.style.display = 'none';
+  oneLoader.classList.add('swipe-out');
+  oneLoaderTimer = setTimeout(function () { oneLoader.style.display = 'none'; }, 600);
+}
+function oneShow(page) {
+  document.querySelectorAll('.onepage').forEach(function (sec) {
+    var on = sec.getAttribute('data-page') === page;
+    sec.hidden = !on;
+    if (on) { sec.classList.remove('page-enter'); void sec.offsetWidth; sec.classList.add('page-enter'); }
+  });
+}
+function changePage(page) {
+  var sec = document.querySelector('.onepage[data-page="' + page + '"]');
+  if (!sec) { location.href = page; return; }
+  showLoader();
+  setTimeout(function () { oneShow(page); try { window.scrollTo(0, 0); } catch (e) {} hideLoader(); }, 120);
+}
+window.changePage = changePage;
+window.oneShow = oneShow;
+(()=>{const ORIGIN="https://t9os.space";let apiBase=null;const xfetch=async(path,opts)=>{const o=Object.assign({cache:"no-store"},opts);const order=apiBase===ORIGIN?[ORIGIN,""]:["",ORIGIN];let err=null;for(const b of order){try{const r=await fetch(b+path,o);apiBase=b;return r}catch(e){err=e}}throw err};const pop=document.getElementById("chat-pop");const fromEl=document.getElementById("chat-pop-from");const msgsEl=document.getElementById("chat-pop-msgs");const input=document.getElementById("chat-pop-input");let self=null;try{self=localStorage.getItem("niche-online-id")}catch(e){self=null}let selfSecret="";try{selfSecret=localStorage.getItem("niche-online-secret")||""}catch(e2){}(function(){try{fetch(""+"/online",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({})}).then(function(r){return r.json()}).then(function(d){if(d&&typeof d.token==="string"&&typeof d.secret==="string"){self=d.token;selfSecret=d.secret;try{localStorage.setItem("niche-online-id",self);localStorage.setItem("niche-online-secret",selfSecret)}catch(e3){}}}).catch(function(){})}catch(e4){}})();if(!self){self=crypto.randomUUID?crypto.randomUUID():"t-"+Date.now()+"-"+Math.random().toString(36).slice(2);try{localStorage.setItem("niche-online-id",self)}catch(e){}}let peer=null;let peerName="Chat";let lastTs=Date.now();let opened=false;let popMode="dm";let roomLastTs=Date.now();const roomCache=[];const row=(text,mine)=>{const d=document.createElement("div");d.className="max-w-[85%] px-3 py-2 rounded-xl text-sm break-words "+(mine?"self-end bg-blue-500 text-white":"self-start bg-blue-200 text-blue-800 border border-blue-400");d.textContent=text;return d};const send=async()=>{const text=input.value.trim();if(!text||!peer)return;input.value="";msgsEl.appendChild(row(text,true));msgsEl.scrollTop=msgsEl.scrollHeight;try{await xfetch("/chat/send",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({from:self,secret:selfSecret,to:peer,text:text})})}catch(e){}};const setPopMode=m=>{popMode=m==="gc"?"gc":"dm";const dm=popMode==="dm";document.getElementById("pop-dm-view").hidden=!dm;document.getElementById("pop-gc-view").hidden=dm;document.getElementById("pop-tab-dm").style.opacity=dm?"1":".5";document.getElementById("pop-tab-gc").style.opacity=dm?".5":"1";if(!dm){document.getElementById("pop-gc-dot").hidden=true;renderRoomPop();pollRoomPop()}};const renderRoomPop=()=>{const box=document.getElementById("pop-gc-msgs");if(!box)return;box.innerHTML="";roomCache.slice(-40).forEach(m=>{const mine=m.from===self;const el=document.createElement("div");el.className="max-w-[90%] px-3 py-2 rounded-xl text-sm break-words "+(mine?"self-end bg-blue-500 text-white":"self-start bg-blue-200 text-blue-800 border border-blue-400");const nm=document.createElement("div");nm.className="text-xs font-bold opacity-80";nm.textContent=mine?"you":m.fromName||"guest";const tx=document.createElement("div");tx.textContent=m.text;el.appendChild(nm);el.appendChild(tx);box.appendChild(el)});box.scrollTop=box.scrollHeight};const pollRoomPop=async()=>{let d=null;try{const r=await xfetch("/chat/room?since="+roomLastTs);d=await r.json()}catch(e){return}if(!d||!Array.isArray(d.messages)||!d.messages.length)return;const seen=new Set(roomCache.map(m=>m.id));let added=false;d.messages.forEach(m=>{if(m.ts>roomLastTs)roomLastTs=m.ts;if(!seen.has(m.id)){roomCache.push(m);seen.add(m.id);added=true}});if(roomCache.length>100)roomCache.splice(0,roomCache.length-100);if(!added)return;const freshOthers=d.messages.some(m=>m.from!==self);if(popMode==="gc"&&!pop.hidden)renderRoomPop();else if(freshOthers){setPopMode("gc");pop.hidden=false;renderRoomPop()}else document.getElementById("pop-gc-dot").hidden=false};const gcSendPop=async()=>{const inp=document.getElementById("pop-gc-input");const text=inp.value.trim();if(!text)return;inp.value="";try{await xfetch("/chat/send",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({from:self,secret:selfSecret,to:"all",text:text})})}catch(e){}pollRoomPop()};document.getElementById("chat-pop-send").addEventListener("click",send);input.addEventListener("keydown",e=>{if(e.key==="Enter")send()});document.getElementById("chat-pop-close").addEventListener("click",()=>{pop.hidden=true;opened=false});document.getElementById("pop-tab-dm").addEventListener("click",()=>setPopMode("dm"));document.getElementById("pop-tab-gc").addEventListener("click",()=>setPopMode("gc"));document.getElementById("pop-gc-send").addEventListener("click",gcSendPop);document.getElementById("pop-gc-input").addEventListener("keydown",e=>{if(e.key==="Enter")gcSendPop()});setInterval(async()=>{if(!self)return;pollRoomPop();let d=null;try{const r=await xfetch("/chat/inbox?token="+encodeURIComponent(self)+"&secret="+encodeURIComponent(selfSecret)+"&since="+lastTs);d=await r.json()}catch(e){return}if(!d||!Array.isArray(d.messages)||!d.messages.length)return;d.messages.forEach(m=>{if(m.ts>lastTs)lastTs=m.ts});const m=d.messages[d.messages.length-1];peer=m.from;peerName=m.fromName||"Chat";fromEl.textContent=peerName;if(!opened){msgsEl.innerHTML="";opened=true}pop.hidden=false;d.messages.forEach(x=>msgsEl.appendChild(row((x.fromName||"")+": "+x.text,false)));msgsEl.scrollTop=msgsEl.scrollHeight},3e3)})();document.addEventListener("keydown",e=>{const k=(e.key||"").toLowerCase();if(e.key==="F12")e.preventDefault();else if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(k==="i"||k==="j"||k==="c"||k==="u"||k==="k"))e.preventDefault();else if((e.ctrlKey||e.metaKey)&&k==="u")e.preventDefault();else if(e.metaKey&&e.altKey&&(k==="i"||k==="j"||k==="c"||k==="u"))e.preventDefault()});document.addEventListener("contextmenu",e=>{try{const t=e.target;if(t&&t.closest&&t.closest("input, textarea"))return}catch(err){}e.preventDefault()},true);document.addEventListener("dblclick",e=>e.preventDefault(),true);document.addEventListener("selectstart",e=>{try{const t=e.target;if(t&&t.closest&&t.closest('input, textarea, [contenteditable="true"]'))return}catch(err){}e.preventDefault()},true);try{const savedCloak=JSON.parse(localStorage.getItem("niche-cloak")||"null");if(savedCloak&&typeof savedCloak==="object"){if(savedCloak.title)document.title=savedCloak.title;if(savedCloak.icon){let link=document.querySelector('link[rel="icon"]');if(!link){link=document.createElement("link");link.rel="icon";document.head.appendChild(link)}link.href=savedCloak.icon}}}catch(e){}function nichePanicHandler(e){let cfg=null;try{cfg=JSON.parse(localStorage.getItem("niche-panic")||"null")}catch(err){}if(!cfg||!cfg.key||!cfg.url)return;try{if(e.target&&e.target.closest&&e.target.closest('input, textarea, [contenteditable="true"]'))return}catch(err2){}if((e.key||"").toLowerCase()!==String(cfg.key).toLowerCase())return;if(!!e.ctrlKey!==!!cfg.ctrl)return;if(!!e.shiftKey!==!!cfg.shift)return;if(!!e.altKey!==!!cfg.alt)return;if(!!e.metaKey!==!!cfg.meta)return;e.preventDefault();try{e.stopPropagation()}catch(err3){}location.href=cfg.url}document.addEventListener("keydown",nichePanicHandler,true);window.addEventListener("message",e=>{try{if(e&&e.data&&e.data.__nichePanic&&typeof e.data.__nichePanic==="string")location.href=e.data.__nichePanic}catch(err4){}});function nicheArmPanicFrames(win){const docs=[];try{if(win&&win.document)docs.push(win.document)}catch(err5){return}for(let i=0;i<docs.length;i++){const d=docs[i];try{if(!d.__nichePanicArmed){d.__nichePanicArmed=true;d.addEventListener("keydown",nichePanicHandler,true)}}catch(err6){}let frames=[];try{frames=d.querySelectorAll("iframe, frame")}catch(err7){}for(let j=0;j<frames.length;j++){try{const cw=frames[j].contentWindow;if(cw&&cw.document&&docs.indexOf(cw.document)===-1)docs.push(cw.document)}catch(err8){}}}}try{mainFrame.addEventListener("load",()=>{try{nicheArmPanicFrames(window)}catch(err9){}})}catch(err10){}setInterval(()=>{try{nicheArmPanicFrames(window)}catch(err11){}},2e3);try{nicheArmPanicFrames(window)}catch(err12){}
+</script>
+
+<script>window.addEventListener("DOMContentLoaded",function(){try{changePage("n1browser27d.html");}catch(e){}});</script>
+</body>
+</html>
