@@ -43,7 +43,11 @@ if (navigator.userAgent.includes("Firefox")) {
 	} catch (e) {}
 }
 
-importScripts("/svg/scram/scramjet.all.js");
+importScripts("./scram/scramjet.all.js");
+
+// Directory of this worker, which is also the service worker's scope. Resolve
+// all app/runtime paths against it so the same build works under any subpath.
+const SCOPE_DIR = self.location.pathname.replace(/[^/]*$/, "");
 
 const { ScramjetServiceWorker } = $scramjetLoadWorker();
 const scramjet = new ScramjetServiceWorker();
@@ -174,23 +178,24 @@ async function handleRequest(event) {
   try {
     const url = new URL(event.request.url);
     if (url.origin === self.location.origin) {
+      const p = url.pathname;
       if (
-        url.pathname === "/bareworker.js" ||
-        url.pathname.startsWith("/baremux/") ||
-        url.pathname.startsWith("/scram/") ||
-        (url.pathname.startsWith("/svg/") && !url.pathname.startsWith("/svg/scramjet/")) ||
-        url.pathname.startsWith("/epoxy/") ||
-        url.pathname.startsWith("/assets/") ||
-        url.pathname.startsWith("/client/") ||
-        url.pathname.startsWith("/cloud/") ||
-        url.pathname.startsWith("/stratus/") ||
-        url.pathname.startsWith("/wallpaper-api/") ||
-        url.pathname === "/launcher.html" ||
-        url.pathname === "/global.css" ||
-        url.pathname === "/reset.css" ||
-        url.pathname === "/register-sw.js" ||
-        url.pathname === "/uv-sw.js" ||
-        url.pathname === "/sw.js"
+        (p.startsWith(SCOPE_DIR) && !p.startsWith(SCOPE_DIR + "scramjet/")) ||
+        p === "/bareworker.js" ||
+        p.startsWith("/baremux/") ||
+        p.startsWith("/scram/") ||
+        p.startsWith("/epoxy/") ||
+        p.startsWith("/assets/") ||
+        p.startsWith("/client/") ||
+        p.startsWith("/cloud/") ||
+        p.startsWith("/stratus/") ||
+        p.startsWith("/wallpaper-api/") ||
+        p === "/launcher.html" ||
+        p === "/global.css" ||
+        p === "/reset.css" ||
+        p === "/register-sw.js" ||
+        p === "/uv-sw.js" ||
+        p === "/sw.js"
       ) {
         return fetch(event.request);
       }

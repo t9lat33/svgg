@@ -1,8 +1,39 @@
 (() => {
   const ON_SITE = /(^|\.)t9os\.space$/i.test(location.host);
-  const P = ON_SITE ? "/svg/" : "https://t9os.space/svg/";
-  const WISP_ROUTE = "/wisp-vps/";
-  function wispRoute() { return WISP_ROUTE; }
+  // Host-agnostic: every file the proxy needs is served as a sibling of this
+  // document, so resolve runtime paths against the document's own directory.
+  // Works on t9os.space (/svg/) and on any static host (e.g. GitHub Pages).
+  const BASE = location.pathname.replace(/[^/]*$/, "") || "/";
+  const P = BASE;
+  // A static host has no backend, so the proxy tunnels through t9os.space's
+  // wisp servers over a cross-origin websocket (they accept any Origin).
+  const WISP_POOL = [
+    "wss://t9os.space/wisp-vps/",
+    "wss://t9os.space/wisp-boston/",
+    "wss://t9os.space/wisp-milan/",
+    "wss://t9os.space/wisp-paloalto/",
+  ];
+  function wispCandidates() {
+    try {
+      if (Array.isArray(window.__NICHE_WISP_POOL__) && window.__NICHE_WISP_POOL__.length) {
+        return window.__NICHE_WISP_POOL__.filter(Boolean);
+      }
+      if (typeof window.__NICHE_WISP__ === "string" && window.__NICHE_WISP__) {
+        return [window.__NICHE_WISP__].concat(WISP_POOL);
+      }
+    } catch (e) {}
+    return WISP_POOL;
+  }
+  async function setTransportWith(conn) {
+    const list = wispCandidates();
+    for (let i = 0; i < list.length; i++) {
+      try {
+        await conn.setTransport(P + "epoxy/index.mjs", [{ wisp: list[i] }]);
+        return true;
+      } catch (e) {}
+    }
+    return false;
+  }
   let __sj = null, __sjReady = false;
   const framesWrap = document.getElementById('frames-wrap');
   const LOCK_CLOSED = '<svg xmlns="http://www.w3.org/2000/svg" width="3.5" height="3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>';
@@ -33,15 +64,7 @@
   let __bareConn = null;
   async function applyTransport() {
     if (!__bareConn) return false;
-    try {
-      await __bareConn.setTransport(P + "epoxy/index.mjs", [{ wisp: "wss://" + location.host + wispRoute() }]);
-      return true;
-    } catch (err) {
-      try {
-        await __bareConn.setTransport(P + "epoxy/index.mjs", [{ wisp: "wss://t9os.space" + wispRoute() }]);
-        return true;
-      } catch (e2) { return false; }
-    }
+    return await setTransportWith(__bareConn);
   }
   const input = document.getElementById('browser-input');
   const tabStrip = document.getElementById('tab-strip');
@@ -100,15 +123,17 @@
       const conn = new BareMux.BareMuxConnection(P + "baremux/worker.js");
       __bareConn = conn;
       await epoxyWarm.catch(() => null);
-      try {
-        await conn.setTransport(P + "epoxy/index.mjs", [{ wisp: "wss://" + location.host + wispRoute() }]);
-      } catch (err) {
-        try {
-          await conn.setTransport(P + "epoxy/index.mjs", [{ wisp: "wss://t9os.space" + wispRoute() }]);
-        } catch (e2) {}
-      }
+      await setTransportWith(conn);
       __sj = client;
       __sjReady = true;
+      try {
+        window.nicheProxyUrl = function (u) {
+          try {
+            if (!__sj || !__sjReady || typeof __sj.encodeUrl !== 'function') return null;
+            return __sj.encodeUrl(u);
+          } catch (e) { return null; }
+        };
+      } catch (e) {}
       if (pendingNav) {
         const next = pendingNav;
         pendingNav = null;
@@ -530,7 +555,7 @@
       try {
         let list = [];
         try {
-          const r0 = await fetch('/suggest?q=' + encodeURIComponent(q));
+          const r0 = await fetch('https://t9os.space/suggest?q=' + encodeURIComponent(q));
           const d0 = await r0.json();
           if (Array.isArray(d0.list)) list = d0.list.filter((x) => typeof x === 'string');
         } catch (e0) {}
