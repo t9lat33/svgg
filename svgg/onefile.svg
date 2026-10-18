@@ -1984,6 +1984,19 @@ self.WASM = '${r}';`,new Response(n,{headers:{"content-type":"text/javascript"}}
     if (!__bareConn) return false;
     return await setTransportWith(__bareConn);
   }
+  function setTransportTo(wisp, conn) {
+    return (conn || __bareConn).setTransport(P + "epoxy/index.mjs", [{ wisp: wisp }])
+      .then(function () { return true; }, function () { return false; });
+  }
+  // Movies need the mullvad exit (datacenter wisp IPs get Cloudflare-walled on
+  // vidfast.vc); switching the shared transport is fine and restores after.
+  try {
+    window.nicheSetWisp = function (wisp) {
+      if (!__bareConn) return Promise.resolve(false);
+      if (wisp) return setTransportTo(wisp);
+      return setTransportWith(__bareConn);
+    };
+  } catch (e) {}
   const input = document.getElementById('browser-input');
   const tabStrip = document.getElementById('tab-strip');
   const HOME = 'n1chtesting1.html';
@@ -3426,6 +3439,9 @@ window.Lumin = new LumiSDK();</script>
   }
   async function proxyPlayerUrl(url) {
     try {
+      if (typeof window.nicheSetWisp === 'function') await window.nicheSetWisp('wss://t9os.space/wisp-mullvad/');
+    } catch (e) {}
+    try {
       if (typeof window.nicheProxyUrl === 'function') {
         var out = window.nicheProxyUrl(url);
         if (out &amp;&amp; out !== url) return out;
@@ -3818,7 +3834,7 @@ window.Lumin = new LumiSDK();</script>
 
   function closeFullscreen() {
     document.getElementById('niche-player').classList.remove('open');
-    document.getElementById('niche-frame').src = 'about:blank';
+    document.getElementById('niche-frame').src = 'about:blank'; try { if (typeof window.nicheSetWisp === 'function') window.nicheSetWisp(); } catch (e) {}
     document.body.style.overflow = '';
   }
 

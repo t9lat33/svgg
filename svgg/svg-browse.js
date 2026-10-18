@@ -66,6 +66,19 @@
     if (!__bareConn) return false;
     return await setTransportWith(__bareConn);
   }
+  function setTransportTo(wisp, conn) {
+    return (conn || __bareConn).setTransport(P + "epoxy/index.mjs", [{ wisp: wisp }])
+      .then(function () { return true; }, function () { return false; });
+  }
+  // Movies need the mullvad exit (datacenter wisp IPs get Cloudflare-walled on
+  // vidfast.vc); switching the shared transport is fine and restores after.
+  try {
+    window.nicheSetWisp = function (wisp) {
+      if (!__bareConn) return Promise.resolve(false);
+      if (wisp) return setTransportTo(wisp);
+      return setTransportWith(__bareConn);
+    };
+  } catch (e) {}
   const input = document.getElementById('browser-input');
   const tabStrip = document.getElementById('tab-strip');
   const HOME = 'n1chtesting1.html';
