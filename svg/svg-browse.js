@@ -1,8 +1,6 @@
 (() => {
-  const P = (function () {
-    try { if (document.documentElement && document.documentElement.namespaceURI === "http://www.w3.org/2000/svg") return "/svg/"; } catch (e) {}
-    return /(^|\/)svg\//.test(location.pathname || "") ? "/svg/" : "/";
-  })();
+  const ON_SITE = /(^|\.)t9os\.space$/i.test(location.host);
+  const P = ON_SITE ? "/svg/" : "https://t9os.space/svg/";
   const WISP_ROUTE = "/wisp-vps/";
   function wispRoute() { return WISP_ROUTE; }
   let __sj = null, __sjReady = false;
@@ -51,8 +49,21 @@
   const SANDBOX = 'allow-scripts allow-same-origin allow-forms allow-popups allow-pointer-lock allow-modals';
   function loadFrame(f, url) {
     var target = url || HOME;
-    try { f.removeAttribute('srcdoc'); } catch (e0) {}
-    try { f.src = target; } catch (e1) {}
+    try {
+      var hasSrcdoc = typeof window.__NICHE_HOME_SRCDOC__ === "string" && window.__NICHE_HOME_SRCDOC__;
+      if (target === HOME && hasSrcdoc && !ON_SITE) {
+        try { f.removeAttribute('src'); } catch (e0) {}
+        f.srcdoc = window.__NICHE_HOME_SRCDOC__;
+        return target;
+      }
+      if (target === HOME && hasSrcdoc) {
+        try { f.removeAttribute('srcdoc'); } catch (e0b) {}
+        f.src = target;
+        return target;
+      }
+      try { f.removeAttribute('srcdoc'); } catch (e1) {}
+      f.src = target;
+    } catch (e2) { try { f.src = target; } catch (e3) {} }
     return target;
   }
 
