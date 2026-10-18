@@ -337,6 +337,7 @@
       try { recordHistory(tabLabel(tab), url); } catch (e2) {}
       renderTabs();
       syncAddress();
+      try { tab.frame.removeAttribute('srcdoc'); } catch (e0) {}
       tab.frame.src = __sj.encodeUrl(url);
     } catch (e) {}
   }
